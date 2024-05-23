@@ -1,5 +1,4 @@
 import Gallery from "../components/GallerySection";
-import Hero from "../components/HeroSection";
 
 //About us page function
 export default function AboutUsPage() {
@@ -8,7 +7,6 @@ export default function AboutUsPage() {
       <div>
         {/* render Hero Section */}
 
-        <Hero />
 
         <div className="m-20">
           {/* description text */}
