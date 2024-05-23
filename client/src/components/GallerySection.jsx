@@ -9,7 +9,7 @@ const Gallery = () => {
 
       {/* Gallery */}
       <section className="mt-6">
-        <div className="flex justify-evenly gap-1">
+        <div className="flex justify-evenly">
           <img src={GalleryImage} width={360} alt="gallery-image" />
           <img src={GalleryImage} width={360} alt="gallery-image" />
           <img src={GalleryImage} width={360} alt="gallery-image" />
