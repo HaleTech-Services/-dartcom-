@@ -9,20 +9,20 @@ const Gallery = () => {
 
       {/* Gallery */}
       <section className="mt-6">
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly gap-1">
           <img src={GalleryImage} width={360} alt="gallery-image" />
           <img src={GalleryImage} width={360} alt="gallery-image" />
           <img src={GalleryImage} width={360} alt="gallery-image" />
         </div>
 
-        <div className="flex justify-evenly mt-6">
+        <div className="flex justify-evenly mt-8 gap-1">
           <img src={GalleryImage} width={360} alt="gallery-image" />
           <img src={GalleryImage} width={360} alt="gallery-image" />
           <img src={GalleryImage} width={360} alt="gallery-image" />
         </div>
       </section>
 
-      <button className="bg-[#0029FF] text-white px-32 py-2 rounded-md text-center mt-6">
+      <button className="bg-[#0029FF] hover:border hover:bg-white hover:text-blue-800 hover:border-blue-900 text-white px-32 py-2 rounded-md text-center mt-6">
         See more
       </button>
     </div>
