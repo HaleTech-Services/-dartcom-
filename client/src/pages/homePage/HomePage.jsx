@@ -1,12 +1,16 @@
 import React from 'react'
 import HomeBanner from './homeBanner/HomeBanner'
 import VisionMission from './homeVision/VisionMission'
+import HomeFaq from './homeFaQ/HomeFaq'
+import HomeTestimonial from './homeTestimonial/HomeTestimonial'
 
 const HomePage = () => {
   return (
-    <div className='w-full h-auto px-[80px] '>
+    <div className='w-full h-auto'>
         <HomeBanner/>
         <VisionMission/>
+        <HomeFaq/>
+        <HomeTestimonial/>
     </div>
   )
 }

@@ -11,7 +11,7 @@ const Navbar = () => {
     },
 
     {
-      name: "About",
+      name: "About Us",
       path: "/about",
     },
 
@@ -32,7 +32,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full h-[80px] bg-white flex items-center justify-between px-[5rem] py-3">
+    <nav className="w-full h-[80px] bg-white flex items-center justify-between px-[5rem] py-3 fixed top-0 right-0 left-0 z-10">
       <h4 className="text-xl font-bold">dart</h4>
       <ul className="md:flex items-center gap-12 hidden ">
         {navLinks.map(({ name, path }) => (
