@@ -24,24 +24,27 @@ export default function Gallery() {
         </ul>
         <button className="ml-auto mr-4 ">Contact Us</button>
       </header>
-      <section className="w-full max-h-[10rem] overflow-hidden flex justify-center items-center relative">
-        <img src={constructionImage} alt="" className="w-full h-auto " />
-        <div className="w-full h-full bg-primaryColor absolute top-0 bottom-0 left-0 right-0 opacity-45 flex justify-center items-center">
-          <span className="color-white text-[3rem] ">Gallery</span>
+      <main>
+        <section className="w-full max-h-[10rem] overflow-hidden flex justify-center items-center relative">
+          <img src={constructionImage} alt="" className="w-full h-auto " />
+          <div className="w-full h-full bg-primaryColor absolute top-0 bottom-0 left-0 right-0 opacity-45 flex justify-center items-center">
+            <span className="color-white text-[3rem] ">Gallery</span>
+          </div>
+        </section>
+        <div className="grid grid-cols-3 md:grid-cols4 justify-center justify-items-center items-center gap-2">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
-      </section>
-      <div className="grid grid-cols-3 md:grid-cols4 justify-center justify-items-center items-center gap-2">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
+      </main>
+      <footer></footer>
     </>
   );
 }
