@@ -2,7 +2,7 @@
 import GalleryImage from "../assets/Group 15.png";
 
 //Gallery section
-const Gallery = () => {
+const GallerySection = () => {
   return (
     <div className="mt-5 text-center">
       <h2 className="text-blue-700 text-align text-1xl font-medium">Gallery</h2>
@@ -29,4 +29,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default GallerySection;
