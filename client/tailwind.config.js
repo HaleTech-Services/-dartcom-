@@ -11,6 +11,9 @@ export default {
         black: "#22201B",
         grey: "#D7D7D7",
       },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
