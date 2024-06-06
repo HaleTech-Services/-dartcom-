@@ -1,11 +1,10 @@
-import React from "react";
-import send from "../../assets/send.png";
-import facebook from "../../assets/facebook.png";
-import linkedin from "../../assets/linkedin.png";
-import pinterest from "../../assets/pinterest.png";
+import send from "../assets/send.png";
+import facebook from "../assets/facebook.png";
+import linkedin from "../assets/linkedin.png";
+import pinterest from "../assets/pinterest.png";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+export default function Footer () {
   return (
     <div className="bg-[#0029FF] mt-[180px] w-full h-auto text-white pt-8 pb-8">
       <div className="flex items-center justify-between px-[80px] pb-6">
@@ -43,6 +42,4 @@ const Footer = () => {
       <p className="border-t-2 text-end pr-10 pt-4">Copyright: 2024 Dartcom Publishers</p>
     </div>
   );
-};
-
-export default Footer;
+}

@@ -1,8 +1,7 @@
-import React from "react";
-import bigImg from "../../../assets/bigImg.png";
-import smallImg from "../../../assets/smallImg.png";
+import bigImg from "../assets/bigImg.png";
+import smallImg from "../assets/smallImg.png";
 
-const HomeBanner = () => {
+export default function HomeBanner () {
   return (
     <div className="w-full h-[80vh] flex justify-between px-[80px] pt-[85px]">
       <div className="pt-[120px]">
@@ -27,6 +26,4 @@ const HomeBanner = () => {
       </div>
     </div>
   );
-};
-
-export default HomeBanner;
+}

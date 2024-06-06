@@ -1,9 +1,8 @@
-import React from "react";
-import minus from "../../../assets/minus.png";
-import plus from "../../../assets/plus.png";
+import minus from "../assets/minus.png";
+import plus from "../assets/plus.png";
 import { useState } from "react";
 
-const HomeFaq = () => {
+export default function HomeFaq () {
   const [showText, setShowText] = useState(false);
   const handleShowText = () => {
     setShowText((prev) => !prev);
@@ -53,9 +52,9 @@ const HomeFaq = () => {
             {showText && (
               <p className="pb-5">
                 Dartcom Projects Nigeria Limited is a company owned and managed
-                by a group of indegeneous professionals and seasoned engineers.
+                by a group of indigenous professionals and seasoned engineers.
                 The company specializes in engineering and management
-                discplines, particularly in the Oil and Gas Industry, and has
+                disciplines, particularly in the Oil and Gas Industry, and has
                 been operational since 2009.
               </p>
             )}
@@ -77,9 +76,9 @@ const HomeFaq = () => {
             {showText1 && (
               <p className="pb-5">
                 Dartcom Projects Nigeria Limited is a company owned and managed
-                by a group of indegeneous professionals and seasoned engineers.
+                by a group of indigenous professionals and seasoned engineers.
                 The company specializes in engineering and management
-                discplines, particularly in the Oil and Gas Industry, and has
+                disciplines, particularly in the Oil and Gas Industry, and has
                 been operational since 2009.
               </p>
             )}
@@ -101,9 +100,9 @@ const HomeFaq = () => {
             {showText2 && (
               <p className="pb-5">
                 Dartcom Projects Nigeria Limited is a company owned and managed
-                by a group of indegeneous professionals and seasoned engineers.
+                by a group of indigenous professionals and seasoned engineers.
                 The company specializes in engineering and management
-                discplines, particularly in the Oil and Gas Industry, and has
+                disciplines, particularly in the Oil and Gas Industry, and has
                 been operational since 2009.
               </p>
             )}
@@ -125,9 +124,9 @@ const HomeFaq = () => {
             {showText3 && (
               <p className="pb-5">
                 Dartcom Projects Nigeria Limited is a company owned and managed
-                by a group of indegeneous professionals and seasoned engineers.
+                by a group of indigenous professionals and seasoned engineers.
                 The company specializes in engineering and management
-                discplines, particularly in the Oil and Gas Industry, and has
+                disciplines, particularly in the Oil and Gas Industry, and has
                 been operational since 2009.
               </p>
             )}
@@ -149,9 +148,9 @@ const HomeFaq = () => {
             {showText4 && (
               <p className="pb-5">
                 Dartcom Projects Nigeria Limited is a company owned and managed
-                by a group of indegeneous professionals and seasoned engineers.
+                by a group of indigenous professionals and seasoned engineers.
                 The company specializes in engineering and management
-                discplines, particularly in the Oil and Gas Industry, and has
+                disciplines, particularly in the Oil and Gas Industry, and has
                 been operational since 2009.
               </p>
             )}
@@ -168,14 +167,14 @@ const HomeFaq = () => {
         <div className="flex items-center justify-between relative border-b">
           <div>
             <h2 className="text-[20px] font-semibold mb-3">
-              What is the company's founding pronciple?
+              What is the company&apos;s founding principle?
             </h2>
             {showText5 && (
               <p className="pb-5">
                 Dartcom Projects Nigeria Limited is a company owned and managed
-                by a group of indegeneous professionals and seasoned engineers.
+                by a group of indigenous professionals and seasoned engineers.
                 The company specializes in engineering and management
-                discplines, particularly in the Oil and Gas Industry, and has
+                disciplines, particularly in the Oil and Gas Industry, and has
                 been operational since 2009.
               </p>
             )}
@@ -197,9 +196,9 @@ const HomeFaq = () => {
             {showText6 && (
               <p className="pb-5">
                 Dartcom Projects Nigeria Limited is a company owned and managed
-                by a group of indegeneous professionals and seasoned engineers.
+                by a group of indigenous professionals and seasoned engineers.
                 The company specializes in engineering and management
-                discplines, particularly in the Oil and Gas Industry, and has
+                disciplines, particularly in the Oil and Gas Industry, and has
                 been operational since 2009.
               </p>
             )}
@@ -214,6 +213,4 @@ const HomeFaq = () => {
       </div>
     </div>
   );
-};
-
-export default HomeFaq;
+}

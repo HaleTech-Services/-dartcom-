@@ -1,13 +1,10 @@
-//import gallery image
 import GalleryImage from "../assets/Group 15.png";
 
-//Gallery section
-const GallerySection = () => {
+
+export default function GallerySection () {
   return (
     <div className="mt-5 text-center">
       <h2 className="text-blue-700 text-align text-1xl font-medium">Gallery</h2>
-
-      {/* Gallery */}
       <section className="mt-6">
         <div className="flex justify-evenly gap-1">
           <img src={GalleryImage} width={360} alt="gallery-image" />
@@ -27,6 +24,4 @@ const GallerySection = () => {
       </button>
     </div>
   );
-};
-
-export default GallerySection;
+}

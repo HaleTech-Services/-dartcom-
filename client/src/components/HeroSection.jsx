@@ -1,7 +1,6 @@
-//import HeroSection Image
 import HeroImage from "../assets/Rectangle 2.png";
 
-const HeroSection = () => {
+export default function HeroSection () {
   return (
     <div
       className="bg-cover h-[250px]"
@@ -14,6 +13,4 @@ const HeroSection = () => {
       </div>
     </div>
   );
-};
-
-export default HeroSection;
+}

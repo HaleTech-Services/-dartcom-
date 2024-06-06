@@ -1,28 +1,13 @@
 import constructionImage from "../assets/construction.jpeg";
-import Card from "../components/Card";
+import Navbar from "../components/Navbar";
+import Card from "../components/Card"; 
+import Footer from "../components/Footer"; 
 
-export default function Gallery() {
+const Gallery = () => {
   return (
     <>
-      <header className="w-full bg-white flex justify-center items-center  p-8">
-        <ul className="flex items-center justify-center gap-4 ml-auto">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-          <li>
-            <a href="#">Gallery</a>
-          </li>
-        </ul>
-        <button className="ml-auto mr-4 ">Contact Us</button>
+      <header>
+        <Navbar />
       </header>
       <main>
         <section className="w-full max-h-[10rem] overflow-hidden flex justify-center items-center relative">
@@ -44,33 +29,11 @@ export default function Gallery() {
           <Card />
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
 
-/*  <header className="w-full bg-white flex justify-center items-center">
-        <div>
-          <ul className="flex">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">Gallery</a>
-            </li>
-          </ul>
-          <button>Contact Us</button>
-        </div>
-      </header>
-      <section className="body">
-        <img src={constructionImage} alt="" />
-      </section>*/
+export default Gallery;
