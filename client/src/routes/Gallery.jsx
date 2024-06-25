@@ -10,13 +10,13 @@ const Gallery = () => {
         <Navbar />
       </header>
       <main>
-        <section className="w-full max-h-[10rem] overflow-hidden flex justify-center items-center relative">
-          <img src={constructionImage} alt="" className="w-full h-auto " />
-          <div className="w-full h-full bg-primaryColor absolute top-0 bottom-0 left-0 right-0 opacity-45 flex justify-center items-center">
-            <span className="color-white text-[3rem] ">Gallery</span>
+        <section className="w-full max-h-[10rem] overflow-hidden relative flex justify-center items-center">
+          <div className="w-full h-full absolute top-0 bottom-0 left-0 right-0 bg-blue-500 opacity-50 flex justify-center items-center">
+            <span className="text-white text-3xl">Gallery</span>
           </div>
+          <img src={constructionImage} alt="" className="w-full h-auto object-cover" />
         </section>
-        <div className="grid grid-cols-3 md:grid-cols4 justify-center justify-items-center items-center gap-2">
+        <div className="grid grid-cols-3 md:grid-cols-4 justify-center justify-items-center items-center gap-2 px-[3rem]">
           <Card />
           <Card />
           <Card />
@@ -27,6 +27,11 @@ const Gallery = () => {
           <Card />
           <Card />
           <Card />
+          <Card />
+          <Card />
+        </div>
+        <div className="w-full flex items-center justify-center mt-11">
+          <button className="bg-blue-700 text-white py-3 px-[4rem] cursor-pointer rounded-lg">See more</button>
         </div>
       </main>
       <footer>
