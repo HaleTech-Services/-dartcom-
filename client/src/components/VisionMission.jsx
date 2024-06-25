@@ -1,9 +1,8 @@
-import React from "react";
-import mission from "../../../assets/mission.png";
-import vision from "../../../assets/vision.png";
-import belief from "../../../assets/belief.png";
+import mission from "../assets/mission.png";
+import vision from "../assets/vision.png";
+import belief from "../assets/belief.png";
 
-const VisionMission = () => {
+export default function VisionMission () {
   return (
     <div className="w-full h-auto pb-8 pt-[160px] px-[80px]">
       {/* OUR VISION SECTION */}
@@ -12,7 +11,7 @@ const VisionMission = () => {
         <div className="text-center">
           <h2 className="font-bold text-3xl mb-4">OUR VISION</h2>
           <p className="w-[520px] text-xl">
-            To be Nigeria's foremost company in our discipline to contribute to
+            To be Nigeria&apos;s foremost company in our discipline to contribute to
             a meaningful quota in achieving vision 2020. To drastically reduce
             unemployment by investing in human capital development.
           </p>
@@ -25,7 +24,7 @@ const VisionMission = () => {
           <h2 className="font-bold text-3xl mb-4">OUR MISSION</h2>
           <p className="w-[520px] text-xl">
             We pledge to deliver without breach of terms. We pledge to develop
-            Nigerian's local content. We pledge to uphold national pride and
+            Nigerian&apos;s local content. We pledge to uphold national pride and
             nations building
           </p>
         </div>
@@ -48,7 +47,7 @@ const VisionMission = () => {
             </p>
             <p className="text-[#0D1821]">
               <span className="font-semibold">PROFILE</span>: To be recognized
-              as the leading construction, engineering, inpection & testing,
+              as the leading construction, engineering, inspection & testing,
               procurement and supply servicing company in Nigeria
             </p>
             <p className="text-[#0D1821]">
@@ -64,6 +63,4 @@ const VisionMission = () => {
       </div>
     </div>
   );
-};
-
-export default VisionMission;
+}

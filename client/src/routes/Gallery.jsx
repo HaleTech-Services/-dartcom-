@@ -1,28 +1,13 @@
 import constructionImage from "../assets/construction.jpeg";
-import Card from "../components/Card";
+import Navbar from "../components/Navbar";
+import Card from "../components/Card"; 
+import Footer from "../components/Footer"; 
 
-export default function Gallery() {
+const Gallery = () => {
   return (
     <>
-      <header className="w-full bg-white flex justify-center items-center  p-8">
-        <ul className="flex items-center justify-center gap-4 ml-auto">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-          <li>
-            <a href="#">Gallery</a>
-          </li>
-        </ul>
-        <button className="ml-auto mr-4 ">Contact Us</button>
+      <header>
+        <Navbar />
       </header>
       <main>
         <section className="w-full max-h-[10rem] overflow-hidden relative flex justify-center items-center">
@@ -49,6 +34,11 @@ export default function Gallery() {
           <button className="bg-blue-700 text-white py-3 px-[4rem] cursor-pointer rounded-lg">See more</button>
         </div>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
+
+export default Gallery;

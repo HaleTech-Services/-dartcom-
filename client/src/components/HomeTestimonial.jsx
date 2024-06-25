@@ -1,7 +1,6 @@
-import React from "react";
-import testimonial from "../../../assets/testimonial.png";
+import testimonial from "../assets/testimonial.png";
 
-const HomeTestimonial = () => {
+export default function HomeTestimonial () {
   return (
     <div className="w-full h-[28vh] bg-[#0029FF] mt-[50px] mb-[60px] p-10 px-[80px]">
       <h2 className="text-white mb-5 text-3xl font-semibold">Testimonials</h2>
@@ -9,8 +8,8 @@ const HomeTestimonial = () => {
         {/* TESTIMONIAL 1 */}
         <div className="bg-white w-[400px] h-auto p-7 shadow-lg mb-8 rounded-md ">
           <p className="mb-8">
-            "Working with dartcom has been pleasing, as i have had no better
-            experience"
+            &quot;Working with dartcom has been pleasing, as i have had no better
+            experience&quot;
           </p>
           <div className="flex gap-2">
             <img src={testimonial} alt="" />
@@ -24,8 +23,8 @@ const HomeTestimonial = () => {
         {/* TESTIMONIAL 2 */}
         <div className="bg-white w-[400px] h-auto p-7 shadow-lg mb-8 rounded-md ">
           <p className="mb-8">
-            "Working with dartcom has been pleasing, as i have had no better
-            experience"
+            &quot;Working with dartcom has been pleasing, as i have had no better
+            experience&quot;
           </p>
           <div className="flex gap-2">
             <img src={testimonial} alt="" />
@@ -39,8 +38,8 @@ const HomeTestimonial = () => {
         {/* TESTIMONIAL 3 */}
         <div className="bg-white w-[400px] h-auto p-7 shadow-lg mb-8 rounded-md ">
           <p className="mb-8">
-            "Working with dartcom has been pleasing, as i have had no better
-            experience"
+            &quot;Working with dartcom has been pleasing, as i have had no better
+            experience&quot;
           </p>
           <div className="flex gap-2">
             <img src={testimonial} alt="" />
@@ -53,6 +52,4 @@ const HomeTestimonial = () => {
       </div>
     </div>
   );
-};
-
-export default HomeTestimonial;
+}

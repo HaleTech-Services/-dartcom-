@@ -1,23 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
-import HomePage from "./pages/homePage/HomePage";
+import Home from "./routes/Home";
 import About from "./routes/About";
 import Gallery from "./routes/Gallery";
 
-function App() {
+function App () {
   return (
-    <div className="min-h-screen w-full bg-gray-100">
+    <main className="min-h-screen w-full bg-gray-100">
       <Router>
-        <Navbar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
-        <Footer />
       </Router>
-    </div>
+    </main>
   );
 }
 

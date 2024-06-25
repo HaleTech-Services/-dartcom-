@@ -1,8 +1,7 @@
-import React from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+export default function Navbar () {
   const location = useLocation();
   const navLinks = [
     {
@@ -38,7 +37,7 @@ const Navbar = () => {
         {navLinks.map(({ name, path }) => (
           <Link
             key={name}
-            href={path}
+            to={path}
             className={`${
               location.pathname === path
                 ? "text-[#4D69FF] font-semibold relative after:content after:block after:w-full after:h-[2px] after:bg-[#4D69FF]"
@@ -54,6 +53,4 @@ const Navbar = () => {
       </button>
     </nav>
   );
-};
-
-export default Navbar;
+}
