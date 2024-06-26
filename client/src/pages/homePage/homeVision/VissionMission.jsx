@@ -37,7 +37,7 @@ const VisionMission = () => {
         <img className="pt-3 w-[500px] h-[425px]" src={belief} alt="vision" />
         <div className="pt-2 w-[550px]">
           <h2 className="font-bold text-3xl mb-4 text-center">OUR BELIEF</h2>
-          <div className="flex flex-col gap-[39px]">
+          <div className="flex flex-col gap-[50px]">
             <p className="text-[#0D1821] ">
               <span className="font-semibold">PEOPLE</span>: To be the company
               that the people want to join and stay with.
