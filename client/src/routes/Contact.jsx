@@ -25,9 +25,9 @@ const Contact = () => {
         <header>
             <Navbar />
         </header>
-        <div className="bg-[#0029FF] mt-[100px] w-auto h-auto text-white pt-8 pb-8 flex rounded-lg ml-2 bg-center">
-            <div className="flex items-center px-[80px] pb-6">
-                <div className="pt-3 flex flex-col space-x-4">
+        <div className="bg-[#0029FF] mt-[100px] w-auto h-auto text-white pt-8 pb-8 flex rounded-lg ml-8 mr-8 bg-center">
+            <div className="flex items-center flex-col px-[80px] pb-6 gap-8">
+                <div className="pt-3 flex  space-x-4">
                     <div className=" flex items-center gap-6 ">
                         <img src={location_icon} alt="location icon" className="cursor-pointer"/>
                         <p className="mb-6">
@@ -46,7 +46,7 @@ const Contact = () => {
                     </div>
                     
                 </div>
-                <div className="flex flex-col gap-9">
+                <div className="flex gap-9">
                     <Link className="flex gap-3" to={"/about"}>
                         <img src={about_us} alt="send" />
                         <p>About us</p>
@@ -61,8 +61,8 @@ const Contact = () => {
                         <p> Contact Us </p>
                     </Link>
                 </div>
-                <div className="pt-6">
-                    <p className="mb-5">Social Media</p>
+                <div className="pt-6 flex items-center gap-8">
+                    <p className="mb-5 flex">Social Media</p>
                     <img className="my-5 cursor-pointer" src={facebook} alt="facebook" />
                     <img className="my-5 cursor-pointer" src={linkedin} alt="linkedin" />
                     <img className="my-5 cursor-pointer" src={pinterest} alt="pinterest" />
