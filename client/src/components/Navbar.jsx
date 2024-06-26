@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Contact from "../routes/Contact";
 
 export default function Navbar () {
   const location = useLocation();
@@ -49,7 +50,11 @@ export default function Navbar () {
         ))}
       </ul>
       <button className="text-white bg-[#4D68FF] px-8 py-2 rounded-md font-medium">
-        Contact Us
+      {/*  */}
+      
+      <Link className="flex gap-3" to={"/contact"}>
+            <p>Contact Us</p>
+          </Link>
       </button>
     </nav>
   );
