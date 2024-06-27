@@ -7,7 +7,7 @@ import Services from "./routes/Services";
 
 function App () {
   return (
-    <main className="min-h-screen w-full bg-gray-100">
+    <main className="min-h-screen w-full">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
