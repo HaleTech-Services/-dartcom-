@@ -4,13 +4,15 @@ import HeroSection from "../components/HeroSection";
 import Footer from "../components/Footer";
 
 const About = () => {
+ const p = 'About Dartcom Projects Nigeria Limited'
+
   return (
     <>
       <header>
         <Navbar />
       </header>
       <main>
-        <HeroSection />
+        <HeroSection p={p} />
         <div className="m-20">
           <div className="m-[30px]">
             <p>
