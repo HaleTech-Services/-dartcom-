@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import about_us from "../assets/icons8-team-24.png";
 import gallery from "../assets/icons8-gallery-30.png";
 import contact_us from "../assets/icons8-address-book-48.png";
-import facebook from "../assets/facebook.png";
+// import facebook from "../assets/facebook.png";
 import linkedin from "../assets/linkedin.png";
-import pinterest from "../assets/pinterest.png";
-import mail_icon from "../assets/mail_icon.svg";
-import call_icon from "../assets/call_icon.svg";
-import location_icon from "../assets/location_icon.svg";
+// import pinterest from "../assets/pinterest.png";
+// import mail_icon from "../assets/mail_icon.svg";
+// import call_icon from "../assets/call_icon.svg";
+// import location_icon from "../assets/location_icon.svg";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -15,7 +15,7 @@ import Footer from "../components/Footer";
 
 
 const Contact = () => {
-    const [showDetails, setShowDetails] = useState(false);
+    // const [showDetails, setShowDetails] = useState(false);
   
     // const handleShowDetailsClick = () => {
     //   setShowDetails(!showDetails);
@@ -25,7 +25,7 @@ const Contact = () => {
         <header>
             <Navbar />
         </header>
-        <div className="bg-[#0029FF] mt-[100px] w-auto h-auto text-white pt-8 pb-8 flex rounded-lg ml-8 mr-8 bg-center">
+{/*         <div className="bg-[#0029FF] mt-[100px] w-auto h-auto text-white pt-8 pb-8 flex rounded-lg ml-8 mr-8 bg-center">
             <div className="flex items-center flex-col px-[80px] pb-6 gap-8">
                 <div className="pt-3 flex  space-x-4">
                     <div className=" flex items-center gap-6 ">
@@ -74,7 +74,7 @@ const Contact = () => {
             <p>Website: https://www.dartcom.com.ng </p>
           </div>
         )}
-      </div>
+      </div> */}
 
       <footer>
         <Footer />
