@@ -1,85 +1,71 @@
 import React, { useState } from "react";
-import about_us from "../assets/icons8-team-24.png";
-import gallery from "../assets/icons8-gallery-30.png";
-import contact_us from "../assets/icons8-address-book-48.png";
-import facebook from "../assets/facebook.png";
-import linkedin from "../assets/linkedin.png";
-import pinterest from "../assets/pinterest.png";
-import mail_icon from "../assets/mail_icon.svg";
-import call_icon from "../assets/call_icon.svg";
-import location_icon from "../assets/location_icon.svg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
+import belief from "../assets/belief.png";
+import visionImage from "../assets/vision.png";
+import facebook from "../assets/facebook.png";
+import pinterest from "../assets/pinterest.png";
+import linkedin from "../assets/linkedin.png";
+import mail_icon from "../assets/mail_icon.svg";
 
 
 const Contact = () => {
-    const [showDetails, setShowDetails] = useState(false);
-  
-    // const handleShowDetailsClick = () => {
-    //   setShowDetails(!showDetails);
-    // };
+    
+    const MailtoLink = ({ emailAddress, label }) => (
+        <a href={`mailto:${emailAddress}`} className="decoration-transparent">
+          {label}
+        </a>
+    );
+      
+
   return (
     <>
         <header>
             <Navbar />
         </header>
-        <div className="bg-[#0029FF] mt-[100px] w-auto h-auto text-white pt-8 pb-8 flex rounded-lg ml-8 mr-8 bg-center">
-            <div className="flex items-center flex-col px-[80px] pb-6 gap-8">
-                <div className="pt-3 flex  space-x-4">
-                    <div className=" flex items-center gap-6 ">
-                        <img src={location_icon} alt="location icon" className="cursor-pointer"/>
-                        <p className="mb-6">
-                            Dartcom Projects Nigeria Limited. No. 6 <br /> Ndahbros Street Trans
-                            Amadi, Portharcourt. <br /> Rivers State, Nigeria.
-                        </p>
-                    </div>
-                    <div className="flex items-center gap-6"> 
-                        <p> <img src={call_icon} alt="call icon" className="cursor-pointer"/> +234 8030836623</p>
-                        <p> <img src={call_icon} alt="call icon" className="cursor-pointer"/> +234 8182746559</p>
-                    </div>
-                    
-                    <div className="flex items-center gap-6">
-                        <img src={mail_icon} alt="mail icon" className="cursor-pointer"/>
-                        <p>oge.akomah@dartcomprojects.com</p>
-                    </div>
-                    
-                </div>
-                <div className="flex gap-9">
-                    <Link className="flex gap-3" to={"/about"}>
-                        <img src={about_us} alt="send" />
-                        <p>About us</p>
-                    </Link>
-                    <Link className="flex gap-3" to={"/gallery"}>
-                        <img src={gallery} alt="send" />
-                        <p>Gallery</p>
-                    </Link>
 
-                    <Link className="flex gap-3" to={"/contact"}>
-                        <img src={contact_us} alt="send" />
-                        <p> Contact Us </p>
-                    </Link>
-                </div>
-                <div className="pt-6 flex items-center gap-8">
-                    <p className="mb-5 flex">Social Media</p>
-                    <img className="my-5 cursor-pointer" src={facebook} alt="facebook" />
-                    <img className="my-5 cursor-pointer" src={linkedin} alt="linkedin" />
-                    <img className="my-5 cursor-pointer" src={pinterest} alt="pinterest" />
-                </div>
-            </div>
-
-        {showDetails && (
-          <div className="flex items-center">
-            <p>Website: https://www.dartcom.com.ng </p>
+        <section className="w-full max-h-[10rem] overflow-hidden relative flex justify-center items-center">
+          <div className="w-full h-full absolute top-0 bottom-0 left-0 right-0 bg-blue-500 opacity-50 flex justify-center items-center">
           </div>
-        )}
-      </div>
+          <img src={visionImage} alt="" className="w-full h-auto object-cover" />
+        </section>
 
-      <footer>
-        <Footer />
-      </footer> 
+        <div className="flex items-center justify-center gap-10 bg-gray-200 p-7 pb-10 rounded-lg shadow-lg my-20 mx-auto sm:w-full md:w-3/4 lg:w-1/2">
+            <div className="grid bg-white p-3 rounded-lg shadow-lg gap-4 sm:w-full md:w-full lg:w-full">
+                <div className="flex items-center justify-between">
+                    
+                    <div className="m-[20px]">
+                        <img className="w-full h-auto object-cover" src={belief} alt="vision" />
+                    </div>
+
+                        <form className="grid grid-rows-4 gap-3 h-auto bg-indigo-600 text-white p-3 rounded-lg shadow-lg sm:max-w-[768px] md:w-3/4 lg:w-4/5">  
+                            <label htmlFor="" className="col-span-full text-lg text-white select-none">Your Name</label>
+                            <input type="text" className="col-span-full border rounded-md p-2" placeholder="Enter your name" name="name" />
+                            <label htmlFor="" className="col-span-full text-lg text-white select-none">Your Email</label>
+                            <input type="text" className="col-span-full border rounded-md p-2" placeholder="Enter your email" name="email" />
+                            <label htmlFor="" className="col-span-full text-lg text-white select-none">Enter your message</label>
+                            <textarea className="col-span-full border rounded-md p-3" name="message" rows='3' placeholder='Enter your message...'></textarea>
+                            <button type='submit' className="col-span-full bg-[#0029FF] hover:bg-white shadow-lg font-poppins text-white hover:text-[#0029FF] py-2 rounded-md text-center select-none">Submit Now</button>
+                        </form>           
+                </div>
+                        <div className="flex items-center justify-evenly gap-4 bg-indigo-600 rounded-md sm:gap-6 md:gap-8 lg:gap-10">
+                            <div className="flex items-center">
+                                <img className="my-5 cursor-pointer" src={mail_icon} />
+                                <p className="font-poppins text-white text-lg">oge.akomah@dartcomprojects.com</p>
+                            </div>
+                            <img className="my-5 cursor-pointer" src={facebook} alt="facebook" />
+                            <img className="my-5 cursor-pointer" src={linkedin} alt="linkedin" />
+                            <img className="my-5 cursor-pointer" src={pinterest} alt="pinterest" />
+                        </div> 
+            </div>
+        </div>
+
+        <footer>
+            <Footer />
+        </footer> 
     </>   
     );
 };
+
 export default Contact;
