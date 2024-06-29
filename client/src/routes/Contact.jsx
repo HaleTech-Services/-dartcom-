@@ -50,7 +50,7 @@ const Contact = () => {
                 </div>
                         <div className="flex items-center justify-evenly gap-4 bg-[#0029FF] rounded-md sm:gap-6 md:gap-8 lg:gap-10">
                             <div className="flex items-center gap-3">
-                                <img className="my-5 cursor-pointer" src={mail_icon} />
+                                <img className="my-5 w-7 h-7 cursor-pointer" src={mail_icon} />
                                 <p className="font-poppins text-white text-lg">oge.akomah@dartcomprojects.com</p>
                             </div>
                             <img className="my-5 cursor-pointer" src={facebook} alt="facebook" />
