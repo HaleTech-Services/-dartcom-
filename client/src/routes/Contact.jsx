@@ -10,15 +10,8 @@ import HeroSection from "../components/HeroSection";
 
 
 const Contact = () => {
-    
-    const MailtoLink = ({ emailAddress, label }) => (
-        <a href={`mailto:${emailAddress}`} className="">
-          {label}
-        </a>
-    );
 
-    const p= 'Contact'
-      
+    const p= 'Contact' 
 
     return (
     <>
