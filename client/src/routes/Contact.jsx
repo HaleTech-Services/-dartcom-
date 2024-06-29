@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import contact_icon from "../assets/undraw_contact_us_re_4qqt.svg";
-import visionImage from "../assets/vision.png";
 import facebook from "../assets/facebook.png";
 import pinterest from "../assets/pinterest.png";
 import linkedin from "../assets/linkedin.png";
@@ -27,7 +26,7 @@ const Contact = () => {
         <section className="w-full max-h-[10rem] overflow-hidden relative flex justify-center items-center">
           <div className="w-full h-full absolute top-0 bottom-0 left-0 right-0 bg-blue-500 opacity-50 flex justify-center items-center">
           </div>
-          <img src={visionImage} alt="" className="w-full h-auto object-cover" />
+          <img src={contact_icon} alt="" className="w-full h-auto object-cover" />
         </section>
 
         <div className="flex items-center justify-center gap-10 bg-gray-200 p-7 pb-10 rounded-lg shadow-lg my-14 mx-auto sm:w-full md:w-3/4 lg:w-1/2">
