@@ -11,7 +11,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="bg-[#0029FF] mt-[180px] w-full h-auto text-white pt-8 pb-8">
+    <div className="bg-[#0029FF] mt-[30px] w-full h-auto text-white pt-8 pb-8">
       <div className="flex flex-col md:flex-row gap-3 p-5">
         <div className="flex flex-col gap-5">
           <span className="w-[40ch]">
