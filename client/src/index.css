@@ -52,4 +52,44 @@
     z-index: 1;
     width: 100%;
   }
+  .bottom-shadow {
+    /* #FF7B00 */
+    box-shadow: 0px 5px rgba(255, 100, 0, 0.4), 1px -1px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* For the info container */
+  .info-container {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    height: auto; /* Ensures the container height adjusts based on content */
+  }
+  
+  .info-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info-number {
+    font-size: 2rem;
+    color: #FF7B00;
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Margin for better spacing when in column layout */
+  }
+  
+  @media (min-width: 768px) {
+    .info-number {
+      margin-bottom: 0; /* Remove margin in row layout */
+      margin-right: 0.5rem; /* Add margin between number and text in row layout */
+    }
+  }
+  
+  .info-text {
+    font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+    max-width: 10ch;
+    text-align: center;
+  }
+      
 }
