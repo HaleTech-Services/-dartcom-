@@ -1,35 +1,61 @@
 import React from "react";
-import data from "../data";
+
+const services = [
+  {
+    title: "Lifting Inspection Service",
+    image: "/assets/img1.jpeg",
+  },
+  {
+    title: "Coating/Painting Services",
+    image: "/assets/img2.jpeg",
+  },
+  {
+    title: "Drill Pipe Inspection Services",
+    image: "/assets/img3.jpeg",
+  },
+  {
+    title: "Welding Inspection Services",
+    image: "/assets/img4.jpeg",
+  },
+  {
+    title: "Radiographic Testing",
+    image: "/assets/img5.jpeg",
+  },
+  {
+    title: "Ultrasonic Testing",
+    image: "/assets/img6.jpeg",
+  },
+];
 
 const Services = () => {
-  const servicesToRender = data.map(function (data) {
-    return (
-      <div className="w-full self-center justify-self-center">
-        <div className="w-full aspect-video overflow-hidden flex items-center justify-center">
-        <img src={`/assets/${data.img}`} alt={`${data.service}`} />
-        </div>
-        <span className="block text-center text-lg font-medium mt-3">{data.service}</span>
-      </div>
-    );
-  });
   return (
-    <div className="w-full px-6">
-      <div className="flex flex-col items-center justify-center gap-5">
-        <div className="bg-blue-200 text-[#4D69FF] py-1 px-3 rounded-2xl">
-          Dartcom Company
+    <section className="bg-[#2D3E4E] text-white py-12">
+      <div className="container mx-auto text-center">
+        <h2 className="text-orange-500 text-sm uppercase mb-2">Our Services</h2>
+        <h1 className="text-3xl font-bold mb-8">We Offer Our Clients</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-5">
+          {services.map((service, index) => (
+            <div key={index} className="">
+              <div className="relative p-3">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <div className=" absolute bottom-0 left-0 h-1/2 min-h-5 w-1/2 border-b-4 border-b-[#76B5EA] border-l-4 border-l-[#76B5EA]"></div>
+                <div className=" absolute top-0 right-0 h-1/2 min-h-5 w-1/2 border-t-4 border-t-[#76B5EA] border-r-4 border-r-[#76B5EA]"></div>
+              </div>
+              <div className="mt-3 mx-1 flex items-start justify-start text-lg font-semibold">
+                {service.title}
+              </div>
+            </div>
+          ))}
         </div>
-        <span className="text-center my-[2rem] md:w-[70ch]">
-          At Dartcom Engineering, we are dedicated to delivering exceptional
-          quality in every project we undertake. We adhere to strict quality
-          control measures and utilize the latest technologies to ensure optimal
-          results. Our commitment to excellence has earned us a reputation for
-          reliability and customer satisfaction
-        </span>
+        <button className="mt-8 px-6 py-2 bg-transparent text-white rounded hover:bg-gray-700 border-white border">
+          Read More...
+        </button>
       </div>
-      <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-3">
-        {servicesToRender}
-      </div>
-    </div>
+    </section>
   );
 };
 
