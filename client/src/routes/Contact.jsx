@@ -95,7 +95,7 @@ const Contact = () => {
                 <span className="bg-red-400 text-white font-bold text-2xl p-3">03</span>
                 <div className="flex flex-col">
                   <span>Best Maintenance Service</span>
-                  <span>Our Maintenance is Top 1</span>
+                  <span>Our Maintenance is Top #1</span>
                 </div>
               </div>
             </section>
