@@ -1,21 +1,25 @@
-import Navbar from "../components/Navbar";
-import HomeBanner from '../components/HomeBanner';
-import VisionMission from '../components/VisionMission';
-import HomeFaq from '../components/HomeFaq';
-import HomeTestimonial from '../components/HomeTestimonial';
-import Footer from "../components/Footer";
-import Services from "../components/Services.jsx"
+import HomeBanner from "../components/HomeBanner.jsx";
+import VisionMission from "../components/VisionMission.jsx";
+import Testimonial from "../components/HomeTestimonial.jsx";
+import Services from "../components/Services.jsx";
+import ConstructionSolutions from "../components/ConstructionSolutions.jsx";
+import PromisesAndValues from "../components/PromisesAndValues.jsx";
+import Projects from "../components/Projects.jsx";
+import Team from "../components/Team.jsx";
 
 const Home = () => {
   return (
-    <section className='w-full h-auto'>  
+    <section className="w-full h-auto">
       <HomeBanner />
+      <ConstructionSolutions />
       <VisionMission />
-      <Services/>
-      <HomeFaq />
-      <HomeTestimonial />
+      <PromisesAndValues />
+      <Services />
+      <Projects />
+      <Team />
+      <Testimonial />
     </section>
-  )
-}
+  );
+};
 
 export default Home;

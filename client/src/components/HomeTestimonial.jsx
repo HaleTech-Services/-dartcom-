@@ -1,73 +1,30 @@
-import React from "react";
+import React from 'react';
 
-const testimonialsData = [
-  {
-    quote: "Working with dartcom has been pleasing, as I have had no better experience",
-    name: "Daniel Kolenda",
-    title: "CEO of JX project limited",
-    image: "/assets/profile.jpg",
-  },
-  {
-    quote: "Working with dartcom has been pleasing, as I have had no better experience",
-    name: "Daniel Kolenda",
-    title: "CEO of JX project limited",
-    image: "/assets/profile.jpg",
-  },
-  {
-    quote: "Working with dartcom has been pleasing, as I have had no better experience",
-    name: "Daniel Kolenda",
-    title: "CEO of JX project limited",
-    image: "/assets/profile.jpg",
-  },
-  {
-    quote: "Working with dartcom has been pleasing, as I have had no better experience",
-    name: "Daniel Kolenda",
-    title: "CEO of JX project limited",
-    image: "/assets/profile.jpg",
-  },
-  {
-    quote: "Working with dartcom has been pleasing, as I have had no better experience",
-    name: "Daniel Kolenda",
-    title: "CEO of JX project limited",
-    image: "/assets/profile.jpg",
-  },
-  {
-    quote: "Working with dartcom has been pleasing, as I have had no better experience",
-    name: "Daniel Kolenda",
-    title: "CEO of JX project limited",
-    image: "/assets/profile.jpg",
-  },
-];
-
-export default function HomeTestimonial () {
+const Testimonial = () => {
   return (
-    <div className="bg-blue-500 py-12">
-      <h2 className="text-center text-white text-2xl md:text-3xl font-bold mb-8">
-        Testimonials
-      </h2>
-      <div className="grid gap-8 md:grid-cols-3 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {testimonialsData.map((testimonial, index) => (
-          <div
-            key={index}
-            className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-between"
-          >
-            <p className="text-lg text-gray-700 mb-4">"{testimonial.quote}"</p>
-            <div className="flex items-center mt-4">
-            <div className="w-12 h-12 overflow-hidden flex flex-center items-center justify-center rounded-full mr-4">
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-full h-auto"
-              />
-              </div>
-              <div>
-                <p className="font-semibold text-gray-800">{testimonial.name}</p>
-                <p className="text-gray-600">{testimonial.title}</p>
-              </div>
-            </div>
-          </div>
-        ))}
+    <div className="text-center py-12 bg-gray-100">
+      <h2 className="text-orange-600 mb-4">TESTIMONIALS</h2>
+      <div className="flex flex-col items-center p-4">
+        <img
+          src="/assets/avatar.jpeg"
+          alt="Person"
+          className="rounded-full mb-4 w-[4rem] h-[4rem] object-cover"
+        />
+        <p className="max-w-2xl mx-auto mb-8">
+          “Dartcom Construction Company delivered exceptional service, completing the project on time, within budget, and to the highest quality standards.”
+        </p>
+        <div className="flex justify-center">
+          <span className="h-2 w-2 bg-gray-400 rounded-full mx-1"></span>
+          <span className="h-2 w-2 bg-orange-600 rounded-full mx-1"></span>
+          <span className="h-2 w-2 bg-gray-400 rounded-full mx-1"></span>
+        </div>
+      </div>
+      <div className="bg-[#FF7B00] py-6 mt-12 flex flex-col md:flex-row items-center justify-center gap-3">
+        <h3 className="text-white text-xl translate-y-0 md:translate-y-2">LOOKING FOR A CONSTRUCTOR FOR YOUR NEXT PROJECT?</h3>
+        <button className="mt-4 px-6 py-2 bg-white text-[#FF7B00] rounded-full">Contact Us Now</button>
       </div>
     </div>
   );
-}
+};
+
+export default Testimonial;
