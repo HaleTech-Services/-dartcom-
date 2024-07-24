@@ -1,11 +1,7 @@
-import Navbar from "../components/Navbar";
-import GallerySection from "../components/GallerySection";
 import HeroSection from "../components/HeroSection";
-import Footer from "../components/Footer";
 import Projects from "../components/Projects";
 
 const About = () => {
-  const p = "About Dartcom Projects Nigeria Limited";
 
   return (
     <>
@@ -152,7 +148,4 @@ const About = () => {
   );
 };
 
-{
-  /* <GallerySection /> */
-}
 export default About;
