@@ -1,6 +1,4 @@
 import { useEffect } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import ServicesProps from "../components/ServicesProps";
 import img1 from "../assets/img13.png";
@@ -18,7 +16,6 @@ import "aos/dist/aos.css";
 
 function Services() {
   const p = "OUR SERVICES";
-  const paragraph = "@Dartcom Company";
   const param =
     "Dartcom carries out its construction and fabrication works to meet international standards and specifications and we ensure that our works exhibits a high structural integrity, durability and corrosive resistance";
   const header = "Build Your Future Today";
@@ -29,7 +26,7 @@ function Services() {
 
   return (
     <main className="w-full h-auto mb-0">
-      <HeroSection p={p} paragraph={paragraph} />
+      <HeroSection text={p} />
 
       <section className="w-full pt-[50px] px-[1rem] sm:px-[2rem] lg:px-[5rem]">
         <h4

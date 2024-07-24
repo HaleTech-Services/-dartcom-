@@ -1,79 +1,110 @@
-// import React, { useState } from "react";
-import about_us from "../assets/icons8-team-24.png";
-import gallery from "../assets/icons8-gallery-30.png";
-import contact_us from "../assets/icons8-address-book-48.png";
-// import facebook from "../assets/facebook.png";
-import linkedin from "../assets/linkedin.png";
-// import pinterest from "../assets/pinterest.png";
-// import mail_icon from "../assets/mail_icon.svg";
-// import call_icon from "../assets/call_icon.svg";
-// import location_icon from "../assets/location_icon.svg";
-import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-
-
+// FeedbackForm.jsx
+import React from "react";
+import HeroSection from "../components/HeroSection";
+import BridgeImage from "/public/assets/footer.jpeg";
 
 const Contact = () => {
-    // const [showDetails, setShowDetails] = useState(false);
-  
-    // const handleShowDetailsClick = () => {
-    //   setShowDetails(!showDetails);
-    // };
   return (
     <>
-{/*         <div className="bg-[#0029FF] mt-[100px] w-auto h-auto text-white pt-8 pb-8 flex rounded-lg ml-8 mr-8 bg-center">
-            <div className="flex items-center flex-col px-[80px] pb-6 gap-8">
-                <div className="pt-3 flex  space-x-4">
-                    <div className=" flex items-center gap-6 ">
-                        <img src={location_icon} alt="location icon" className="cursor-pointer"/>
-                        <p className="mb-6">
-                            Dartcom Projects Nigeria Limited. No. 6 <br /> Ndahbros Street Trans
-                            Amadi, Portharcourt. <br /> Rivers State, Nigeria.
-                        </p>
-                    </div>
-                    <div className="flex items-center gap-6"> 
-                        <p> <img src={call_icon} alt="call icon" className="cursor-pointer"/> +234 8030836623</p>
-                        <p> <img src={call_icon} alt="call icon" className="cursor-pointer"/> +234 8182746559</p>
-                    </div>
-                    
-                    <div className="flex items-center gap-6">
-                        <img src={mail_icon} alt="mail icon" className="cursor-pointer"/>
-                        <p>oge.akomah@dartcomprojects.com</p>
-                    </div>
-                    
-                </div>
-                <div className="flex gap-9">
-                    <Link className="flex gap-3" to={"/about"}>
-                        <img src={about_us} alt="send" />
-                        <p>About us</p>
-                    </Link>
-                    <Link className="flex gap-3" to={"/gallery"}>
-                        <img src={gallery} alt="send" />
-                        <p>Gallery</p>
-                    </Link>
-
-                    <Link className="flex gap-3" to={"/contact"}>
-                        <img src={contact_us} alt="send" />
-                        <p> Contact Us </p>
-                    </Link>
-                </div>
-                <div className="pt-6 flex items-center gap-8">
-                    <p className="mb-5 flex">Social Media</p>
-                    <img className="my-5 cursor-pointer" src={facebook} alt="facebook" />
-                    <img className="my-5 cursor-pointer" src={linkedin} alt="linkedin" />
-                    <img className="my-5 cursor-pointer" src={pinterest} alt="pinterest" />
-                </div>
+      <div className="mt-8"></div>
+      <HeroSection text={"Contact us"} />
+      <div className="flex flex-col items-center justify-center min-h-screen bg-white">
+        <div className="mt-8"></div>
+        <h2 className="text-orange-500 text-center text-sm uppercase mb-2">
+          Who Dartcom Customer Service Are
+        </h2>
+        <h1 className="text-black text-center text-2xl font-bold mb-6">
+          We Got 24/7 Customer Feedback
+        </h1>
+        <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-[80%]">
+          <form className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <input
+              type="text"
+              placeholder="Your Full Name"
+              className="p-3 border border-gray-300 rounded-lg w-full"
+            />
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              className="p-3 border border-gray-300 rounded-lg w-full"
+            />
+            <input
+              type="tel"
+              placeholder="Your Phone Number"
+              className="p-3 border border-gray-300 rounded-lg w-full"
+            />
+            <input
+              type="text"
+              placeholder="Your Address"
+              className="p-3 border border-gray-300 rounded-lg w-full"
+            />
+            <textarea
+              placeholder="Enter Your Message Here..."
+              className="col-span-1 sm:col-span-2 p-3 border border-gray-300 rounded-lg w-full"
+            />
+            <button
+              type="submit"
+              className="col-span-1 sm:col-span-2 self-center justify-self-center w-[50%] bg-blue-600 text-white py-3 rounded-lg text-center font-bold"
+            >
+              Message Us
+            </button>
+          </form>
+          <div className="mt-8">
+            <div className="relative h-64 w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2441.678031899069!2d-0.1399628237809214!3d51.53230101386771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b1c1a0eeca1%3A0x9c9de78e076869f8!2sZSL%20London%20Zoo!5e0!3m2!1sen!2suk!4v1620280218248!5m2!1sen!2suk"
+                title="Map"
+                className="absolute inset-0 w-full h-full border-0"
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
             </div>
-
-        {showDetails && (
-          <div className="flex items-center">
-            <p>Website: https://www.dartcom.com.ng </p>
           </div>
-        )}
-      </div> */}
+        </div>
+        <button className="mt-4 bg-white text-black py-2 px-4 rounded-none border border-gray-600 mb-6">
+          Back Home
+        </button>
 
-    </>   
-    );
+        <div
+          className={`bg-cover w-full relative h-[500px] min-h-fit md:min-h-[70vh] flex items-center justify-center md:justify-start gap-3`}
+          style={{
+            backgroundImage: `linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${BridgeImage})`,
+          }}
+        >
+          <div className="absolute top-0 left-0 h-full w-full flex flex-col items-center justify-center text-white  ">
+            <span className="block mt-5">Get a quote</span>
+            <h2 className="text-2xl font-bold">Build Your Future Today</h2>
+            <h3>LET DARTCOM BRING THAT FUTURE OUT TODAY</h3>
+            <button className="bg-white p-3 rounded-md text-darkBlue mt-3 mb-auto">Contact Us Now</button>
+
+            <section className="flex gap-3 text-black flex-col md:flex-row mb-3">
+              <div className="flex flex-row gap-2 bg-white items-center justify-start md:justify-center p-3">
+                <span className="bg-red-400 text-white font-bold text-2xl p-3">01</span>
+                <div className="flex flex-col">
+                  <span>Best Consultation</span>
+                  <span>We got the best on Consultation</span>
+                </div>
+              </div>
+              <div className="flex gap-2 bg-white items-center justify-center p-3">
+                <span className="bg-red-400 text-white font-bold text-2xl p-3">02</span>
+                <div className="flex flex-col">
+                  <span>Best Custormer Review</span>
+                  <span>We got reviews Everyday</span>
+                </div>
+              </div>
+              <div className="flex gap-2 bg-white items-center justify-center p-3">
+                <span className="bg-red-400 text-white font-bold text-2xl p-3">03</span>
+                <div className="flex flex-col">
+                  <span>Best Maintenance Service</span>
+                  <span>Our Maintenance is Top #1</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
+
 export default Contact;
