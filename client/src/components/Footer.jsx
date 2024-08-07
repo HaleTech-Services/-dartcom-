@@ -11,7 +11,6 @@ export default function Footer() {
   };
 
   return (
-
     <div className="bg-[#0029FF] mt-[18px] w-full h-auto text-white pt-8 pb-8">
       <div className="flex flex-col md:flex-row gap-3 p-5">
         <div className="flex flex-col gap-5">
@@ -23,13 +22,12 @@ export default function Footer() {
             <span>+234 8030836623</span>
             <span>+234 8182746559 </span>
             <span>oge.akomah@dartcomprojects.com</span>
-
           </div>
         </div>
       </div>
-        <div className="text-center md:text-right mt-8">
-          <p className="text-gray-600">© HALETECH</p>
-        </div>
-    </footer>
+      <div className="text-center md:text-right mt-8">
+        <p className="text-gray-600">© HALETECH</p>
+      </div>
+    </div>
   );
 }
