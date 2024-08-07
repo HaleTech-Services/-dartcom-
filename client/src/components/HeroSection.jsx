@@ -4,7 +4,7 @@ import HeroImage from "/assets/hero.jpeg";
 export default function HeroSection({ text, children }) {
   return (
     <div
-      className={`bg-cover h-[250px] md:h-[70vh] ${
+      className={`bg-cover h-[250px] md:h-[100vh] ${
         !children && "flex items-center justify-center md:justify-start"
       }`}
       style={{
@@ -22,7 +22,7 @@ export default function HeroSection({ text, children }) {
         )}
         {!children && (
           <p className="text-center md:text-right text-white">
-            @ Dartcom Company
+            @ Dartcom Projects
           </p>
         )}
 
