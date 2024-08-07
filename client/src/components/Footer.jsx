@@ -11,6 +11,7 @@ export default function Footer() {
   };
 
   return (
+
     <>
       <footer className=" text-white py-12 bg-[#2D3E4E]">
         <div className="container mx-auto px-4 py-4">
@@ -59,6 +60,21 @@ export default function Footer() {
                 <li>Email</li>
               </ul>
             </div>
+
+
+    <div className="bg-[#0029FF] mt-[18px] w-full h-auto text-white pt-8 pb-8">
+      <div className="flex flex-col md:flex-row gap-3 p-5">
+        <div className="flex flex-col gap-5">
+          <span className="w-[40ch]">
+            Dartcom Projects Nigeria Ltd. No. 6 Ndahbros Street Trans Amadi,
+            Port Harcourt. Rivers State, Nigeria.
+          </span>
+          <div className="flex flex-col">
+            <span>+234 8030836623</span>
+            <span>+234 8182746559 </span>
+            <span>oge.akomah@dartcomprojects.com</span>
+
+
           </div>
         </div>
       </footer>

@@ -1,3 +1,4 @@
+
 import HeroImage from "/assets/hero.jpeg";
 
 export default function HeroSection({ text, children }) {
@@ -24,6 +25,7 @@ export default function HeroSection({ text, children }) {
             @ Dartcom Company
           </p>
         )}
+
       </div>
     </div>
   );
