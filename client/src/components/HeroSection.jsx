@@ -1,25 +1,31 @@
-import HeroImage from "../assets/bg.png";
 
-export default function HeroSection({ p, paragraph, header, param }) {
+import HeroImage from "/assets/hero.jpeg";
+
+export default function HeroSection({ text, children }) {
   return (
     <div
-      className="bg-cover h-auto sm:h-[400px]"
-      style={{ backgroundImage: `url(${HeroImage})` }}
+      className={`bg-cover h-[250px] md:h-[70vh] ${
+        !children && "flex items-center justify-center md:justify-start"
+      }`}
+      style={{
+        backgroundImage: `linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${HeroImage})`,
+      }}
     >
-      <div className="pt-36">
-        <h2 className="text-white font-semibold text-2xl sm:text-5xl ml-[80px] mt-[60px]">
-          {p}
-        </h2>
-        <p className="text-white text-xs ml-[120px] sm:ml-[285px]">
-          {paragraph}
-        </p>
+        {children}
+      <div
+        className={`${!children && "translate-y-1/2 md:translate-x-[50%] translate-x-0 flex flex-col"}`}
+      >
+        {!children && (
+          <h2 className="text-white font-bold text-center md:text-right text-4xl md:text-5xl">
+            {text}
+          </h2>
+        )}
+        {!children && (
+          <p className="text-center md:text-right text-white">
+            @ Dartcom Company
+          </p>
+        )}
 
-        <h2 className="text-white text-center text-2xl sm:text-4xl font-bold mb-3">
-          {header}
-        </h2>
-        <p className="text-white text-center w-[350px] pb-[30px] sm:w-[650px] lg:w-[800px] mx-auto text-sm">
-          {param}
-        </p>
       </div>
     </div>
   );
