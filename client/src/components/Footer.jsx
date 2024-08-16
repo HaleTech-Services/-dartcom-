@@ -14,11 +14,16 @@ export default function Footer() {
     <>
       <footer className=" text-white py-12 bg-[#2D3E4E]">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex justify-around flex-col md:flex-row gap-16">
-          <h4 className="font-bold text-orange-600">logo</h4>
+          <div className="grid justify-around grid-cols-2 md:flex md:flex-row gap-16">
+            <div className="w-full md:w-2/12">
+              <img
+                src="/assets/Logo.jpeg"
+                alt="Dartcom"
+                style={{ width: "9rem", height: "3.5rem" }}
+              />
+            </div>
             <div>
-              
-              <p>
+              <small>
                 Dartcom Project Nigeria LTD
                 <br />
                 No. 6, Nnabros Street,
@@ -26,7 +31,7 @@ export default function Footer() {
                 Trans Amadi, Port Harcourt,
                 <br />
                 Rivers State, Nigeria
-              </p>
+              </small>
               <div className="flex space-x-4 mt-4">
                 <FaFacebookF />
                 <FaLinkedinIn />

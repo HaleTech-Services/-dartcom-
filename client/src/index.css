@@ -60,7 +60,7 @@
   /* For the info container */
   .info-container {
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     gap: 1rem;
     height: auto; /* Ensures the container height adjusts based on content */
   }

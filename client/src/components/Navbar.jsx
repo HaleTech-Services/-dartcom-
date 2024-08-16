@@ -29,8 +29,8 @@ export default function Navbar() {
     },
 
     {
-      name: "Gallery",
-      path: "/gallery",
+      name: "Projects",
+      path: "/projects",
     },
   ];
 
@@ -46,7 +46,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="w-full h-[80px] bg-white flex items-center justify-around px-[2rem] fixed top-0 right-0 left-0 z-10">
-        <h4 className="text-xl font-bold">Logo</h4>
+        <img src="/assets/Logo.jpeg" alt="Dartcom" style={{width: '9rem'}} />
         <FaBars className="md:hidden" size={30} onClick={handleToggleNavOpen} />
         <ul className="md:flex items-center gap-12 hidden ">
           {navLinks.map(({ name, path }) => (

@@ -26,7 +26,7 @@ const services = [
 
 export default function VisionMission() {
   return (
-    <div className="w-full bg-[#2D3E4E] min-h-6 my-5 flex flex-col md:flex-row items-stretch justify-center gap-5 p-5">
+    <div className="w-full bg-[#2D3E4E] min-h-6 my-5 flex flex-col md:flex-row items-stretch justify-center gap-8 p-10">
       {services.map((service, index) => (
         <div key={index} className="flex flex-col md:flex-row items-center bg-white w-full md:w-1/3">
           <div className="w-full md:w-1/3">
