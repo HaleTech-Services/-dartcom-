@@ -1,5 +1,5 @@
 import HeroSection from "../components/HeroSection";
-import Projects from "../components/Projects";
+import Projects from "../components/Project";
 
 const About = () => {
 

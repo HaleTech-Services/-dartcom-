@@ -28,19 +28,19 @@ const PromiseAndValues = () => {
         {values.map((value, index) => (
           <div
             key={index}
-            className="relative overflow-hidden bg-white shadow p-5 flex flex-col items-start"
+            className="group relative overflow-hidden bg-white shadow p-5 flex flex-col items-start transform transition-transform duration-500 ease-in-out hover:-translate-y-2"
           >
             <div className="relative w-full max-w-xs h-48 overflow-hidden p-3">
               <img
                 src={value.imgSrc}
                 alt={value.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
-              <div className=" absolute bottom-0 left-0 h-1/2 min-h-5 w-1/2 border-b-4 border-b-[#76B5EA] border-l-4 border-l-[#76B5EA]"></div>
-              <div className=" absolute top-0 right-0 h-1/2 min-h-5 w-1/2 border-t-4 border-t-[#76B5EA] border-r-4 border-r-[#76B5EA]"></div>
+              <div className="absolute bottom-0 left-0 h-1/2 min-h-5 w-1/2 border-b-4 border-[#76B5EA] border-l-4 transition-all duration-500 ease-in-out transform -translate-x-10 group-hover:translate-x-0"></div>
+              <div className="absolute top-0 right-0 h-1/2 min-h-5 w-1/2 border-t-4 border-[#76B5EA] border-r-4 transition-all duration-500 ease-in-out transform translate-x-10 group-hover:translate-x-0"></div>
             </div>
             <div className="mt-4">
-              <h3 className="text-lg font-medium text-gray-900">
+              <h3 className="text-lg font-medium text-gray-900 transition-transform duration-500 ease-in-out group-hover:translate-y-1">
                 {value.title}
               </h3>
             </div>

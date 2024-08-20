@@ -26,9 +26,9 @@ export default function Footer() {
               <small>
                 Dartcom Project Nigeria LTD
                 <br />
-                No. 6, Nnabros Street,
+                No. 19B, Eliwelibo Main Road, Mandela Estate, 
                 <br />
-                Trans Amadi, Port Harcourt,
+                Off Sars Road, Rukpokwu, Port Harcourt,
                 <br />
                 Rivers State, Nigeria
               </small>
@@ -41,28 +41,28 @@ export default function Footer() {
             <div>
               <h4 className="font-bold mb-2">Quick Links</h4>
               <ul>
-                <li onClick={() => handleNavigation("/services")}>
+                <li onClick={() => handleNavigation("/services")} className="cursor-pointer mb-5">
                   Our Services
                 </li>
-                <li onClick={() => handleNavigation("/about")}>About Us</li>
-                <li onClick={() => handleNavigation("/")}>Our Projects</li>
-                <li onClick={() => handleNavigation("/")}>Features</li>
+                <li onClick={() => handleNavigation("/about")} className="cursor-pointer mb-5">About Us</li>
+                <li onClick={() => handleNavigation("/")} className="cursor-pointer mb-5">Our Projects</li>
+                <li onClick={() => handleNavigation("/")} className="cursor-pointer mb-5">Features</li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-2">Support</h4>
               <ul>
-                <li>Who We Are</li>
-                <li>Shop</li>
-                <li>FAQ</li>
+                <li className="cursor-pointer mb-5">Who We Are</li>
+                <li className="cursor-pointer mb-5"></li>
+                <li className="cursor-pointer">FAQ</li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-2">Contact Us</h4>
               <ul>
-                <li>Address</li>
-                <li>Phone</li>
-                <li>Email</li>
+                <li><small>Address</small></li>
+                <li><small>+234 803 083 6623</small></li>
+                <li className="cursor-pointer mb-5"><small>info@dartcomprojects.com</small></li>
               </ul>
             </div>
           </div>

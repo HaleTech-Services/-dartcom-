@@ -4,7 +4,7 @@ import Testimonial from "../components/HomeTestimonial.jsx";
 import Services from "../components/Services.jsx";
 import ConstructionSolutions from "../components/ConstructionSolutions.jsx";
 import PromisesAndValues from "../components/PromisesAndValues.jsx";
-import Projects from "../components/Projects.jsx";
+import Projects from "../components/Project.jsx";
 import Team from "../components/Team.jsx";
 
 const Home = () => {
