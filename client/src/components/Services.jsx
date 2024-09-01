@@ -3,20 +3,32 @@ import { useNavigate } from "react-router-dom";
 
 const services = [
   {
+    title: "Building Construction",
+    image: "/assets/house.jpg",
+  },
+  {
     title: "Lifting Inspection Service",
-    image: "/assets/img1.jpeg",
+    image: "/assets/crane.jpg",
+  },
+  {
+    title: "Roads, Bridges and Jetty Contruction",
+    image: "/assets/bridge3.jpg",
   },
   {
     title: "Coating/Painting Services",
-    image: "/assets/img2.jpeg",
+    image: "/assets/painting.jpeg",
   },
   {
-    title: "Drill Pipe Inspection Services",
-    image: "/assets/img3.jpeg",
+    title: "Structural Fabrication and Installation",
+    image: "/assets/concrete.jpg",
   },
   {
     title: "Welding Inspection Services",
     image: "/assets/img4.jpeg",
+  },
+  {
+    title: "Warehouses Construction",
+    image: "/assets/ware.jpg",
   },
   {
     title: "Radiographic Testing",
@@ -55,7 +67,7 @@ const Services = () => {
                 <div className="absolute bottom-0 left-0 h-1/2 min-h-5 w-1/2 border-b-4 border-[#76B5EA] border-l-4 transition-all duration-500 ease-in-out transform -translate-x-10 group-hover:translate-x-0"></div>
                 <div className="absolute top-0 right-0 h-1/2 min-h-5 w-1/2 border-t-4 border-[#76B5EA] border-r-4 transition-all duration-500 ease-in-out transform translate-x-10 group-hover:translate-x-0"></div>
               </div>
-              <div className="mt-3 mx-1 flex items-start justify-start text-lg font-semibold opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+              <div className="text-lg font-medium text-white justify-start transition-transform duration-500 ease-in-out group-hover:translate-y-1">
                 {service.title}
               </div>
             </div>

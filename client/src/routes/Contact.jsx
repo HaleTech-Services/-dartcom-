@@ -1,8 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import HeroSection from "../components/HeroSection";
 import BridgeImage from "/public/assets/footer.jpeg";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    address: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    emailjs
+      .send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        formData,
+        'YOUR_USER_ID' // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          setResponseMessage("Message sent successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            address: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setResponseMessage("Failed to send message. Please try again.");
+        }
+      )
+      .finally(() => setIsSubmitting(false));
+  };
+
   return (
     <>
       <div className="mt-8"></div>
@@ -16,38 +64,60 @@ const Contact = () => {
           We Got 24/7 Customer Feedback
         </h1>
         <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-[80%]">
-          <form className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <form className="grid grid-cols-1 gap-6 sm:grid-cols-2" onSubmit={handleSubmit}>
             <input
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Your Full Name"
               className="p-3 border border-gray-300 rounded-lg w-full"
+              required
             />
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Your Email Address"
               className="p-3 border border-gray-300 rounded-lg w-full"
+              required
             />
             <input
               type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
               placeholder="Your Phone Number"
               className="p-3 border border-gray-300 rounded-lg w-full"
             />
             <input
               type="text"
+              name="address"
+              value={formData.address}
+              onChange={handleChange}
               placeholder="Your Address"
               className="p-3 border border-gray-300 rounded-lg w-full"
             />
             <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Enter Your Message Here..."
               className="col-span-1 sm:col-span-2 p-3 border border-gray-300 rounded-lg w-full"
+              required
             />
             <button
               type="submit"
               className="col-span-1 sm:col-span-2 self-center justify-self-center w-[50%] bg-blue-600 text-white py-3 rounded-lg text-center font-bold"
+              disabled={isSubmitting}
             >
-              Message Us
+              {isSubmitting ? "Sending..." : "Message Us"}
             </button>
           </form>
+          {responseMessage && (
+            <div className="mt-4 text-center text-green-600">{responseMessage}</div>
+          )}
           <div className="mt-8">
             <div className="relative h-64 w-full">
               <iframe

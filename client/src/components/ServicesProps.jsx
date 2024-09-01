@@ -15,7 +15,7 @@ const p1 =
   "We conduct a wide group of analysis techniques in industries to evaluate the properties of a material component or system without causing damage.";
 
 const p2 =
-  "Magnetic particle inspection is achieved by using either direct or indirect magnetization considering the direction of the electric current which may be either alternating current(AC) / direct current(DC).";
+  "Construction of ultramodern ";
 
 const p3 =
   "Liquid penetrant inspection is used to detect casting, forging welding, surface defects such as surface porosity, leaks in new products and fatigue cracks on service components.";

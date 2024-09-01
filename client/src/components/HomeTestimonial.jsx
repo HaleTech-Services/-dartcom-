@@ -1,39 +1,56 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const testimonials = [
   {
-    image: '/assets/icon1.jpg',
-    text: "Dartcom Construction Company delivered exceptional service, completing the project on time, within budget, and to the highest quality standards.",
-    name: "John Doe",
+    image: '/assets/power.jpg',
+    text: "Their expertise in power infrastructure was instrumental in achieving our project goals efficiently and effectively.",
+    name: "Federal Ministry of Power",
   },
   {
-    image: '/assets/icon2.jpg',
-    text: "The team at Dartcom went above and beyond to ensure every detail was perfect. Highly recommend their services.",
-    name: "Jane Smith",
+    image: '/assets/total.jpg',
+    text: "Dartcom Projects Ltd.'s dedication to safety and quality made them an invaluable partner in our operations.",
+    name: "Total E & P Nigeria",
   },
   {
-    image: '/assets/icon3.jpg',
-    text: "Professional, reliable, and always exceeding expectations. Dartcom is my go-to for all construction needs.",
-    name: "Emily Johnson",
+    image: '/assets/abia.jpg',
+    text: "Dartcom Projects Ltd. is a reliable partner, consistently delivering high-quality construction services for state projects.",
+    name: "Abia State Government",
   },
   {
-    image: '/assets/icon4.jpg',
-    text: "An outstanding experience with Dartcom. They delivered high-quality work on time and on budget.",
-    name: "Michael Brown",
+    image: '/assets/NLNG.png',
+    text: "Dartcom's engineering services were critical in ensuring the success of our LNG projects.",
+    name: "Nigeria Liquified Natural Gas (NLNG)",
   },
   {
-    image: '/assets/icon5.jpg',
-    text: "Dartcom Construction offers top-notch service with a personal touch. I couldn't be happier with the results.",
-    name: "Sarah Davis",
+    image: '/assets/niger.jpg',
+    text: "Their innovative approach and timely execution have greatly contributed to the development of our regional infrastructure.",
+    name: "Niger Delta Development Commission",
   },
   {
-    image: '/assets/icon6.jpeg',
-    text: "Exceptional quality and service. Dartcom’s attention to detail and professionalism is unmatched.",
-    name: "David Wilson",
+    image: '/assets/notore.png',
+    text: "Their professionalism and technical expertise have been crucial in supporting our industrial and agricultural development initiatives.",
+    name: "Notore",
   },
+  {
+    image: '/assets/tenaris.jpg',
+    text: "Dartcom's commitment to excellence has made them a trusted partner in our global operations.",
+    name: "Tenaris Global Services Ltd.",
+  },
+  {
+    image: '/assets/pcmn.png',
+    text: "Dartcom's top-notch services and attention to detail have consistently met our rigorous industry standards.",
+    name: "Pipe Coaters Nigeria Ltd.",
+  },
+  {
+    image: '/assets/water.jpg',
+    text: "Dartcom Projects Ltd. delivered exceptional infrastructure solutions, exceeding our expectations in water resource management.",
+    name: "Federal Ministry of Water Resources of Nigeria.",
+  }
 ];
 
 const Testimonial = () => {
+  const navigate = useNavigate()
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextTestimonial = () => {
@@ -52,6 +69,10 @@ const Testimonial = () => {
     return () => clearInterval(intervalId); // Cleanup on component unmount
   }, []);
 
+  const Oncontact = () => {
+    navigate('/contact')
+  }
+
   return (
     <div className="relative text-center py-12 bg-gray-100">
       {/* Dark radial gradient overlay */}
@@ -61,8 +82,11 @@ const Testimonial = () => {
         <img
           src={testimonials[currentIndex].image}
           alt="Person"
-          className="rounded-full mb-4 w-[4rem] h-[4rem] object-cover transition-opacity duration-500 ease-in-out"
+          className="rounded-full mb-2 bg-white w-[4rem] h-[4rem] object-cover transition-opacity duration-500 ease-in-out"
         />
+        <small className='max-w-2xl mx-auto mb-8 px-4 transition-opacity duration-500 ease-in-out text-white'>
+          "{testimonials[currentIndex].name}"
+        </small>
         <p className="max-w-2xl mx-auto mb-8 px-4 transition-opacity duration-500 ease-in-out text-white">
           “{testimonials[currentIndex].text}”
         </p>
@@ -78,7 +102,7 @@ const Testimonial = () => {
             ></span>
           ))}
         </div>
-        <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
+        <div className="absolute top-1/2 left-0 transform -translate-y-1/2 ml-4">
           <button
             onClick={prevTestimonial}
             className="bg-gray-600 text-white p-2 rounded-full"
@@ -86,7 +110,7 @@ const Testimonial = () => {
             &lt;
           </button>
         </div>
-        <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
+        <div className="absolute top-1/2 right-0 transform -translate-y-1/2 mr-4">
           <button
             onClick={nextTestimonial}
             className="bg-gray-600 text-white p-2 rounded-full"
@@ -97,7 +121,7 @@ const Testimonial = () => {
       </div>
       <div className="bg-[#FF7B00] py-6 mt-12 flex flex-col md:flex-row items-center justify-center gap-3">
         <h3 className="text-white text-xl">LOOKING FOR A CONSTRUCTOR FOR YOUR NEXT PROJECT?</h3>
-        <button className="mt-4 px-6 py-2 bg-white text-[#FF7B00] rounded-full">Contact Us Now</button>
+        <button className="mt-4 px-6 py-2 bg-white text-[#FF7B00] rounded-full cursor-pointer" onClick={Oncontact}>Contact Us Now</button>
       </div>
     </div>
   );

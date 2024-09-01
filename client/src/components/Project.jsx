@@ -18,7 +18,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
         <div className="relative row-span-2 w-full h-64 md:h-full">
           <img
-            src="/assets/grid-1.jpeg"
+            src="/assets/grid-5.jpg"
             alt="Project 1"
             className="w-full h-full object-cover"
           />
@@ -26,15 +26,15 @@ const Projects = () => {
         </div>
         <div className="relative w-full h-48 md:h-64">
           <img
-            src="/assets/grid-2.jpeg"
+            src="/assets/grid-2.jpg"
             alt="Project 2"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-tl from-black/50 via-transparent to-black/50"></div>
         </div>
         <div className="relative w-full h-48 md:h-64">
           <img
-            src="/assets/grid-3.jpeg"
+            src="/assets/grid-3.jpg"
             alt="Project 3"
             className="w-full h-full object-cover"
           />
@@ -42,7 +42,7 @@ const Projects = () => {
         </div>
         <div className="relative w-full h-48 md:h-64">
           <img
-            src="/assets/grid-4.jpeg"
+            src="/assets/grid-4.jpg"
             alt="Project 4"
             className="w-full h-full object-cover"
           />
@@ -50,7 +50,7 @@ const Projects = () => {
         </div>
         <div className="relative w-full h-48 md:h-64">
           <img
-            src="/assets/grid-5.jpeg"
+            src="/assets/grid-1.jpg"
             alt="Project 5"
             className="w-full h-full object-cover"
           />
