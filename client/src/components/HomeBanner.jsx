@@ -2,8 +2,10 @@ import bigImg from "../assets/bigImg.png";
 import smallImg from "../assets/smallImg.png";
 import construction from '../../public/assets/construction.jpg'
 import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function HomeBanner() {
+  const navigate = useNavigate();
 
   const [completedProjects, setCompletedProjects] = useState(1);
   const [customerSatisfaction, setCustomerSatisfaction] = useState(1);
@@ -52,9 +54,9 @@ export default function HomeBanner() {
             <h2 className="capitalize text-2xl md:text-4xl font-extrabold max-w-[30ch] text-center">
               The Best engineering Construction company
             </h2>
-            <span className="cursor-pointer bg-white p-3 rounded-sm text-[#4D69FF]">
+            <Link to='/about'><button className="cursor-pointer hover:bg-slate-800 hover:text-white bg-white p-3 rounded-sm text-[#4D69FF]">
               Read More
-            </span>
+            </button></Link>
           </div>
         </div>
       </div>

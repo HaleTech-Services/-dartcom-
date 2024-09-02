@@ -32,7 +32,7 @@ const services = [
   },
   {
     title: "Radiographic Testing",
-    image: "/assets/img5.jpeg",
+    image: "/assets/radio.jpg",
   },
   {
     title: "Ultrasonic Testing",

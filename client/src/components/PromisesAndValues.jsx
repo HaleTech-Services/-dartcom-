@@ -2,16 +2,16 @@ import React from "react";
 
 const PromiseAndValues = () => {
   const values = [
-    { imgSrc: "/assets/strategy-image.jpeg", title: "Excellent Work Strategy" },
+    { imgSrc: "/assets/Excellent-Work.jpg", title: "Excellent Work Strategy" },
     { imgSrc: "/assets/budget-image.jpeg", title: "Budget Adherence" },
     { imgSrc: "/assets/safety-image.jpeg", title: "High Safety Measures" },
     {
-      imgSrc: "/assets/why-construction-image.jpeg",
+      imgSrc: "/assets/progectss.jpg",
       title: "High Quality Construction",
     },
-    { imgSrc: "/assets/timeliness-image.jpeg", title: "Timeliness" },
+    { imgSrc: "/assets/strategy.jpg", title: "Timeliness" },
     {
-      imgSrc: "/assets/customer-image.jpeg",
+      imgSrc: "/assets/satisfaction.jpg",
       title: "Customer Satisfaction Survey",
     },
   ];
@@ -34,7 +34,7 @@ const PromiseAndValues = () => {
               <img
                 src={value.imgSrc}
                 alt={value.title}
-                className="w-full h-full object-cover rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110"
+                className="w-full h-full rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
               <div className="absolute bottom-0 left-0 h-1/2 min-h-5 w-1/2 border-b-4 border-[#76B5EA] border-l-4 transition-all duration-500 ease-in-out transform -translate-x-10 group-hover:translate-x-0"></div>
               <div className="absolute top-0 right-0 h-1/2 min-h-5 w-1/2 border-t-4 border-[#76B5EA] border-r-4 transition-all duration-500 ease-in-out transform translate-x-10 group-hover:translate-x-0"></div>

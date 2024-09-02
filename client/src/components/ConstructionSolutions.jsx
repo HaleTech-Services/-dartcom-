@@ -36,8 +36,8 @@ const ConstructionSolutions = () => {
         <Link to='/services'><button className="bg-[#2D3E4E] text-white px-4 py-2 rounded">Read More...</button></Link>
       </div>
       <div className="md:w-1/2 p-4 h-full relative">
-        <div className="w-full h-64 bg-gray-300 flex items-center justify-center overflow-hidden">
-          <img src="/assets/hero-img.jpeg" alt="Construction workers" />
+        <div className="w-full h-64 bg-gray-300 flex items-center justify-center overflow-hidden bg-gradient-to-tr">
+          <img src="/assets/Technical.jpeg" alt="Construction workers" className="w-full h-full object-cover rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110" />
         </div>
         <div className=" absolute bottom-0 left-0 h-1/2 min-h-5 w-1/2 border-b-4 border-b-[#76B5EA] border-l-4 border-l-[#76B5EA]"></div>
         <div className=" absolute top-0 right-0 h-1/2 min-h-5 w-1/2 border-t-4 border-t-[#76B5EA] border-r-4 border-r-[#76B5EA]"></div>

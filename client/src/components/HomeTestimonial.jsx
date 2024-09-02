@@ -49,8 +49,9 @@ const testimonials = [
   }
 ];
 
+
 const Testimonial = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextTestimonial = () => {
@@ -69,9 +70,9 @@ const Testimonial = () => {
     return () => clearInterval(intervalId); // Cleanup on component unmount
   }, []);
 
-  const Oncontact = () => {
-    navigate('/contact')
-  }
+  const handleContactClick = () => {
+    navigate('/contact');
+  };
 
   return (
     <div className="relative text-center py-12 bg-gray-100">
@@ -121,7 +122,7 @@ const Testimonial = () => {
       </div>
       <div className="bg-[#FF7B00] py-6 mt-12 flex flex-col md:flex-row items-center justify-center gap-3">
         <h3 className="text-white text-xl">LOOKING FOR A CONSTRUCTOR FOR YOUR NEXT PROJECT?</h3>
-        <button className="mt-4 px-6 py-2 bg-white text-[#FF7B00] rounded-full cursor-pointer" onClick={Oncontact}>Contact Us Now</button>
+        <button className="mt-4 px-6 py-2 bg-white text-[#FF7B00] rounded-full cursor-pointer" onClick={handleContactClick}>Contact Us Now</button>
       </div>
     </div>
   );
