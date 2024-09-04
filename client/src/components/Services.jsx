@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: "Coating/Painting Services",
-    image: "/assets/painting.jpeg",
+    image: "/assets/spray.jpeg",
   },
   {
     title: "Structural Fabrication and Installation",

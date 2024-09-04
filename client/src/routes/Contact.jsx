@@ -28,10 +28,10 @@ const Contact = () => {
 
     emailjs
       .send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        "ervice_pnnw47b", // Replace with your EmailJS service ID
+        "template_2baoswa", // Replace with your EmailJS template ID
         formData,
-        'YOUR_USER_ID' // Replace with your EmailJS user ID
+        "JWdUiWVouJ5jEr_YP" // Replace with your EmailJS user ID
       )
       .then(
         (result) => {
@@ -64,7 +64,10 @@ const Contact = () => {
           We Got 24/7 Customer Feedback
         </h1>
         <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-[80%]">
-          <form className="grid grid-cols-1 gap-6 sm:grid-cols-2" onSubmit={handleSubmit}>
+          <form
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2"
+            onSubmit={handleSubmit}
+          >
             <input
               type="text"
               name="name"
@@ -116,16 +119,18 @@ const Contact = () => {
             </button>
           </form>
           {responseMessage && (
-            <div className="mt-4 text-center text-green-600">{responseMessage}</div>
+            <div className="mt-4 text-center text-green-600">
+              {responseMessage}
+            </div>
           )}
           <div className="mt-8">
             <div className="relative h-64 w-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.8809209757567!2d7.028004014766333!3d4.866690096445476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cde89137f0f9%3A0xe4c9a6f0f8f6d9cb!2s19B%20Eliwelibo%20Main%20Rd%2C%20Mandela%20Estate%2C%20Rukpokwu%2C%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1691498366842!5m2!1sen!2sng"
-                title="Map"
-                className="absolute inset-0 w-full h-full border-0"
-                allowFullScreen=""
+                style={{height: 'auto', width: '100%'}}
+                allowfullscreen=""
                 loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
@@ -140,7 +145,7 @@ const Contact = () => {
             backgroundImage: `linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${BridgeImage})`,
           }}
         >
-          <div className="absolute top-0 left-0 h-full w-full flex flex-col items-center justify-center text-white  ">
+          <div className="absolute top-0 left-0 h-full w-full flex flex-col items-center justify-center text-white">
             <span className="block mt-5">Get a quote</span>
             <h2 className="text-2xl font-bold">Build Your Future Today</h2>
             <h3>LET DARTCOM BRING THAT FUTURE OUT TODAY</h3>
@@ -163,7 +168,7 @@ const Contact = () => {
                   02
                 </span>
                 <div className="flex flex-col">
-                  <span>Best Custormer Review</span>
+                  <span>Best Customer Review</span>
                   <span>We got reviews Everyday</span>
                 </div>
               </div>

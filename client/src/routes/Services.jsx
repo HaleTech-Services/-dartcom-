@@ -5,11 +5,11 @@ import img1 from "../assets/img13.png";
 import img2 from "../assets/img14.png";
 import img3 from "../assets/img15.png";
 import img4 from "../assets/img16.png";
-import img5 from "../assets/img17.png";
-import img6 from "../assets/img18.png";
-import img7 from "../assets/img19.png";
-import img8 from "../assets/img20.png";
-import img9 from "../assets/img21.png";
+import img5 from "/assets/Oil.jpeg";
+import img6 from "/assets/prog3.jpg";
+import img7 from "/assets/archi5.jpg";
+import img8 from "/assets/Beam.jpg";
+import img9 from "/assets/Technical.jpeg";
 import img10 from "../assets/img22.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -159,12 +159,12 @@ function Services() {
 
           <div className="flex flex-col gap-1">
             <div className="flex gap-1 w-full">
-              <img className="w-[480px]" src={img6} alt="" />
-              <img className="w-[260px]" src={img7} alt="" />
+              <img className="w-[480px] h-64" src={img6} alt="" />
+              <img className="w-[260px] h-64" src={img7} alt="" />
             </div>
             <div className="flex gap-1 w-full">
-              <img className="w-[260px]" src={img8} alt="" />
-              <img className="w-[480px]" src={img9} alt="" />
+              <img className="w-[260px] h-64" src={img8} alt="" />
+              <img className="w-[480px] h-64" src={img9} alt="" />
             </div>
           </div>
         </div>

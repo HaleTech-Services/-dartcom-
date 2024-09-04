@@ -9,20 +9,20 @@ const Team = () => {
       </div>
       <div className="flex flex-col md:flex-row items-stretch gap-3 my-9">
         <div>
-          <div className="w-full">
-            <img src="/assets/team1.jpeg" alt="Project Managers" className="w-full h-full object-cover" />
+          <div className="w-64 h-64">
+            <img src="/assets/manager.jpeg" alt="Project Manager" className="w-full h-64 object-cover" />
           </div>
           <span className="my-3 text-xl">Project Managers</span>
         </div>
         <div>
           <div className="w-full h-25">
-            <img src="/assets/team2.jpeg" alt="Technical Team" className="w-full h-full object-cover" />
+            <img src="/assets/Teamm.jpeg" alt="Technical Team" className="w-full h-64 object-cover" />
           </div>
           <span className="my-3 text-xl">Technical Team</span>
         </div>
         <div>
           <div className="w-full h-25">
-            <img src="/assets/team3.jpeg" alt="Construction Team" className="w-full h-full object-cover" />
+            <img src="/assets/Teamm.jpeg" alt="Construction Team" className="w-full h-64 object-cover" />
           </div>
           <span className="my-3 text-xl">Construction Team</span>
         </div>
