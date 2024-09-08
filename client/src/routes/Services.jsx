@@ -112,12 +112,12 @@ function Services() {
         <p className="font-poppins">
           DARTCOM PROJECTS NIGERIA LIMITED has a training facility, with
           experienced and well trained facilitators who are professionals in
-          areas of lifting inspection,Crane operator,Rigger,Rope access etc.
+          areas of lifting inspection, Crane operator, Rigger, Rope access etc.
           Other training services include Crane inspection training, crane
-          operator training,crane maintenance training,Rigger training,fore man
-          training,rope access training,NDTtraining,NEBOSH,Project management
-          training etc. Our trainers are certified in LEEA,NSL,Lyod
-          British,ASNT,and FACTACT. We also provide training services to our
+          operator training, crane maintenance training, Rigger training, Fore man
+          training, rope access training, NDTtraining, NEBOSH, Project management
+          training etc. Our trainers are certified in LEEA, NSL, Lyod
+          British, ASNT, and FACTACT. We also provide training services to our
           client in their facilities.
         </p>
         <div
@@ -155,16 +155,16 @@ function Services() {
           EXPLORE OUR RECENT PROJECT
         </h1>
         <div className="lg:flex gap-1 w-full hidden">
-          <img className="h-[520px]" src={img5} alt="" />
+          <img className="h-[520px] w-1/4" src={img5} alt="" />
 
           <div className="flex flex-col gap-1">
             <div className="flex gap-1 w-full">
-              <img className="w-[480px] h-64" src={img6} alt="" />
-              <img className="w-[260px] h-64" src={img7} alt="" />
+              <img className="w-[67%] h-64" src={img6} alt="" />
+              <img className="w-[33%] h-64" src={img7} alt="" />
             </div>
             <div className="flex gap-1 w-full">
-              <img className="w-[260px] h-64" src={img8} alt="" />
-              <img className="w-[480px] h-64" src={img9} alt="" />
+              <img className="w-[33%] h-64" src={img8} alt="" />
+              <img className="w-[67%] h-64" src={img9} alt="" />
             </div>
           </div>
         </div>

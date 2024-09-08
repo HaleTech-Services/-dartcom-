@@ -6,6 +6,7 @@ import BridgeImage from "/public/assets/footer.jpeg";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
+    from_name: "", // Business Name
     email: "",
     phone: "",
     address: "",
@@ -28,16 +29,20 @@ const Contact = () => {
 
     emailjs
       .send(
-        "ervice_pnnw47b", // Replace with your EmailJS service ID
-        "template_2baoswa", // Replace with your EmailJS template ID
-        formData,
-        "JWdUiWVouJ5jEr_YP" // Replace with your EmailJS user ID
+        "service_8hbfx68", // Replace with your EmailJS service ID
+        "template_tjcitb5", // Replace with your EmailJS template ID
+        {
+          ...formData,
+          subject: formData.from_name, // Set subject as from_name (Business Name)
+        },
+        "PCMX-qv3kJEl1UlT5" // Replace with your EmailJS user ID
       )
       .then(
         (result) => {
           setResponseMessage("Message sent successfully!");
           setFormData({
             name: "",
+            from_name: "",
             email: "",
             phone: "",
             address: "",
@@ -68,6 +73,15 @@ const Contact = () => {
             className="grid grid-cols-1 gap-6 sm:grid-cols-2"
             onSubmit={handleSubmit}
           >
+            <input
+              type="text"
+              name="from_name"
+              value={formData.from_name}
+              onChange={handleChange}
+              placeholder="Your Business Name"
+              className="p-3 border border-gray-300 rounded-lg w-full"
+              required
+            />
             <input
               type="text"
               name="name"
@@ -107,7 +121,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               placeholder="Enter Your Message Here..."
-              className="col-span-1 sm:col-span-2 p-3 border border-gray-300 rounded-lg w-full"
+              className="col-span-1 sm:col-span-2 p-3 h-40 border border-gray-300 rounded-lg w-full"
               required
             />
             <button
@@ -126,8 +140,10 @@ const Contact = () => {
           <div className="mt-8">
             <div className="relative h-64 w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.8809209757567!2d7.028004014766333!3d4.866690096445476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cde89137f0f9%3A0xe4c9a6f0f8f6d9cb!2s19B%20Eliwelibo%20Main%20Rd%2C%20Mandela%20Estate%2C%20Rukpokwu%2C%20Port%20Harcourt!5e0!3m2!1sen!2sng!4v1691498366842!5m2!1sen!2sng"
-                style={{height: 'auto', width: '100%'}}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.2977121554745!2d6.984364620971568!3d4.889734474665184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d18e08aebf45%3A0xa272e5c2ac7173f9!2sHaleTech%20Services!5e0!3m2!1sen!2sng!4v1725809854825!5m2!1sen!2sng"
+                width="100%"
+                height="250"
+                style={{border: 0}}
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"

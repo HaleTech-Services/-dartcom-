@@ -98,7 +98,7 @@ const About = () => {
               <div className="flex flex-col items-start w-full md:w-1/4 aspect-square gap-3 font-semibold">
                 <div className="w-full h-full aspect-square">
                   <img
-                    src="/public/assets/team1.jpeg"
+                    src="/public/assets/teem3.jpeg"
                     alt="Project Managers"
                     className="w-full h-full object-cover"
                   />
@@ -109,7 +109,7 @@ const About = () => {
               <div className="flex flex-col items-start w-full md:w-1/4 aspect-square gap-3 font-semibold">
                 <div className="w-full h-full aspect-square">
                   <img
-                    src="/public/assets/team2.jpeg"
+                    src="/public/assets/Teamm.jpeg"
                     alt="Project Managers"
                     className="w-full h-full object-cover"
                   />
@@ -120,7 +120,7 @@ const About = () => {
               <div className="flex flex-col items-start w-full md:w-1/4 aspect-square gap-3 font-semibold">
                 <div className="w-full h-full aspect-square">
                   <img
-                    src="/public/assets/team3.jpeg"
+                    src="/public/assets/teem.jpeg"
                     alt="Project Managers"
                     className="w-full h-full object-cover"
                   />
@@ -131,7 +131,7 @@ const About = () => {
               <div className="flex flex-col items-start w-full md:w-1/4 aspect-square gap-3 font-semibold">
                 <div className="w-full h-full aspect-square">
                   <img
-                    src="/public/assets/team4.jpeg"
+                    src="/public/assets/teem1.jpeg"
                     alt="Project Managers"
                     className="w-full h-full object-cover"
                   />
