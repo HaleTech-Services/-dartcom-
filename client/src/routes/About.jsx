@@ -16,7 +16,7 @@ const About = () => {
             <h1 className="text-2xl font-bold">
               We Provide The Best Customer Services
             </h1>
-            <p className="mt-4 text-gray-700 text-left">
+            <p className="mt-4 text-gray-700 text-justify">
               Dartcom Projects Nigeria Ltd is a company that is known
               internationally for providing engineering solutions in the area of
               construction and fabrication. We offer engineering expertise that
@@ -26,7 +26,7 @@ const About = () => {
           </section>
 
           <section className="text-center mb-8">
-            <p className="text-gray-700 text-left">
+            <p className="text-gray-700 text-justify">
               We also offer innovative and cost effective solutions to our
               clients, including conceptual ideas in engineering and
               construction, design and fabrication as well as long term
@@ -44,7 +44,7 @@ const About = () => {
               Dartcom
             </h2>
             <h1 className="text-2xl font-bold">Our Mission</h1>
-            <p className="mt-4 text-gray-700 text-left">
+            <p className="mt-4 text-gray-700 text-justify">
               We Pledge to deliver Without breach of terms. We pledge to develop
               Nigerians local content. We pledge to uphold National pride and
               nations Building.
@@ -58,7 +58,7 @@ const About = () => {
               Dartcom
             </h2>
             <h1 className="text-2xl font-bold">Our VISION</h1>
-            <p className="mt-4 text-gray-700 text-left">
+            <p className="mt-4 text-gray-700 text-justify">
               To be Nigerias’ foremost company in our discipline to contribute a
               meaningful quota in achieving vision 2020 To drastically reduce
               unemployment by investing in human capital development.
@@ -74,14 +74,14 @@ const About = () => {
               <span className="text-[#D2153D] font-bold">PROFILE:</span> To be
               recognized as the leading construction, Engineering, Inspection
               and testing, Procurement and supply servicing company in Nigeria.
-              <br />
+              <br /> <br />
               <span className="text-[#D2153D] font-bold">GROWTH:</span> To
               maintain controlled profitable growth in Nigeria and Africa.
-              <br />
+              <br /> <br />
               <span className="text-[#D2153D] font-bold">PEOPLE:</span> To be
-              the company that the people want to join and stay with. <br />
+              the company that the people want to join and stay with. <br /> <br />
               <span className="text-[#D2153D] font-bold">INNOVATION:</span> To
-              be a company that actively forsters Innovation <br />
+              be a company that actively forsters Innovation <br /> <br />
               <span className="text-[#D2153D] font-bold">
                 QUALITY OF SERVICE:
               </span>

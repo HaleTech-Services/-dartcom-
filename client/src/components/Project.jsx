@@ -13,7 +13,7 @@ const Projects = () => {
     <div className="w-[90%] mx-auto p-3">
       <div className="text-center">
         <h2 className="text-sm text-orange-500">OUR WORK</h2>
-        <h1 className="text-4xl font-bold">EXPLORE OUR RECENT PROJECT</h1>
+        <h1 className="text-2xl md:text-4xl font-bold">EXPLORE OUR RECENT PROJECT</h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
         <div className="relative row-span-2 w-full h-64 md:h-full">

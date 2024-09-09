@@ -1,3 +1,5 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
@@ -11,109 +13,155 @@ import img10 from "../assets/img10.png";
 import img11 from "../assets/img11.png";
 import img12 from "../assets/img12.png";
 
-const p1 =
-  "We conduct a wide group of analysis techniques in industries to evaluate the properties of a material component or system without causing damage.";
+const services = [
+  {
+    title: "Building Construction",
+    image: "/assets/house.jpg",
+    description:
+      "We provide high-quality building construction services, from residential homes to commercial structures, ensuring durability and modern designs that meet client specifications.",
+  },
+  {
+    title: "Lifting Inspection Service",
+    image: "/assets/crane.jpg",
+    description:
+      "Our lifting inspection services cover the thorough examination of cranes and lifting equipment, ensuring compliance with safety regulations and enhancing operational efficiency.",
+  },
+  {
+    title: "Roads, Bridges and Jetty Construction",
+    image: "/assets/bridge3.jpg",
+    description:
+      "We specialize in the construction of roads, bridges, and jetties, focusing on infrastructure that supports long-term use and withstands environmental challenges.",
+  },
+  {
+    title: "Coating/Painting Services",
+    image: "/assets/spray.jpeg",
+    description:
+      "Our coating and painting services offer protection against corrosion and wear for industrial and commercial structures, using high-performance paints and coatings.",
+  },
+  {
+    title: "Structural Fabrication and Installation",
+    image: "/assets/concrete.jpg",
+    description:
+      "We offer structural fabrication and installation services, ensuring that steel frameworks and concrete structures are assembled with precision and safety.",
+  },
+  {
+    title: "Welding Inspection Services",
+    image: "/assets/img4.jpeg",
+    description:
+      "Our certified welding inspection services ensure the quality and strength of welded joints, helping to prevent failures and ensuring safety in construction projects.",
+  },
+  {
+    title: "Warehouses Construction",
+    image: "/assets/ware.jpg",
+    description:
+      "We design and construct modern, functional warehouses tailored to the storage and logistical needs of your business, ensuring optimized space utilization.",
+  },
+  {
+    title: "Radiographic Testing",
+    image: "/assets/radio.jpg",
+    description:
+      "Our radiographic testing service uses advanced X-ray technology to detect hidden flaws in materials and structures without causing damage.",
+  },
+  {
+    title: "Ultrasonic Testing",
+    image: "/assets/img6.jpeg",
+    description:
+      "We use ultrasonic testing to detect subsurface flaws in metals and other materials, offering a non-destructive testing solution with high accuracy.",
+  },
+  {
+    title: "NON DESTRUCTIVE TESTING(NDT)",
+    image: img1,
+    description:
+      "We conduct a wide group of analysis techniques in industries to evaluate the properties of a material component or system without causing damage.",
+  },
+  {
+    title: "MAGNETIC PARTICLE INSPECTION",
+    image: img2,
+    description: "Construction of ultramodern...",
+  },
+  // {
+  //   title: "LIQUID PENETRANT INSPECTION",
+  //   image: img3,
+  //   description:
+  //     "Liquid penetrant inspection is used to detect casting, forging welding, surface defects...",
+  // },
+  // {
+  //   title: "COATING/PAINTING INSPECTION",
+  //   image: img7,
+  //   description:
+  //     "We offer professional coating project design and independent paint inspection services...",
+  // },
+  {
+    title: "DRILL PIPE INSPECTION SERVICES",
+    image: img8,
+    description:
+      "We use modified instruments at inspection sites to identify defects in metallurgy...",
+  },
+  {
+    title: "CALIBRATION/PRESSURE TESTING",
+    image: img9,
+    description:
+      "We conduct certification of a wide range of control pressure storage tanks...",
+  },
+  {
+    title: "SOCKETING AND SPLICING INSPECTION",
+    image: img11,
+    description:
+      "We conduct onsite socketing and splicing inspection and testing on all types of lifting equipment...",
+  },
+  {
+    title: "DESTRUCTIVE TESTING SERVICE",
+    image: img12,
+    description:
+      "We conduct destructive tests to determine the ultimate tensile strength...",
+  },
+];
 
-const p2 =
-  "Construction of ultramodern ";
+const ServicesProps = () => {
+  const navigate = useNavigate();
 
-const p3 =
-  "Liquid penetrant inspection is used to detect casting, forging welding, surface defects such as surface porosity, leaks in new products and fatigue cracks on service components.";
+  const handleClick = () => {
+    navigate("/services");
+  };
 
-const p4 =
-  "The use of Non Destructive Testing (NDT) method of inspecting materials for hidden flaws by using the ability of electromagnetic radiation to penetrate various materials.";
-
-const p5 =
-  "This method is sensitive to both surface and subsurface discontinuity. It is highly accurate in determining reflector position and estimating size and shape.";
-
-const p6 =
-  "They use slings and loose lifting gear, wire rope, hoist, pad. We conduct visual inspections preceeding any maintenace, repair, testing or any new device being put into service.";
-
-const p7 =
-  "We offer professional coating project design and independent paint inspection services to help owners of commercial and industrial structures alleviate the risk of corrosion.";
-
-const p8 =
-  "We uses a modified instrument such as spherometer at inspection sites to identify defects in metallurgy, in order to prevent fracture of the drill stem during well boring.";
-
-const p9 =
-  "We conducts certification of a wide range of control pressure storage tanks and safety valves for production facilities, refineries and manufacturing industries.";
-
-const p10 =
-  "We have knowledge to inspects all types of protecting and insulation system including marine coating fireproofing material and confirm the equipment suitable for it application, compressor, size separator and moist raps.";
-
-const p11 =
-  "We conduct provisional onsite socketing and splicing inspecting and testing on all types of lifting equipment's including wire rope slings, resin socketing or wire rope white metal socketing, hoist and plate clamps.";
-
-const p12 =
-  "We conducts destructive test of wire rope slings to determine the ultimate tensile strength of the wire rope slings. We also construct destructive test for all types of wire ropes up to 56mm in diameter.";
-
-export default function ServicesProps() {
   return (
-    <div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10 border-gray-500 border-b-2 pb-10">
-        <div>
-          <h4 className="font-semibold mb-1">NON DESTRUCTIVE TESTING(NDT)</h4>
-          <img src={img1} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p1}</p>
+    <section className="bg-[#2D3E4E] m-0 text-white py-12">
+      <div className="container mx-auto text-center">
+        <h2 className="text-orange-500 text-sm uppercase mb-2">Our Services</h2>
+        <h1 className="text-3xl font-bold mb-8">What We Offer</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-5">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="group relative transform transition-transform duration-500 ease-in-out hover:-translate-y-2 mb-8"
+            >
+              <div className="relative p-3 overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-48 object-cover rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 left-0 h-1/2 min-h-5 w-1/2 border-b-4 border-[#76B5EA] border-l-4 transition-all duration-500 ease-in-out transform -translate-x-10 group-hover:translate-x-0"></div>
+                <div className="absolute top-0 right-0 h-1/2 min-h-5 w-1/2 border-t-4 border-[#76B5EA] border-r-4 transition-all duration-500 ease-in-out transform translate-x-10 group-hover:translate-x-0"></div>
+              </div>
+              <div className="text-lg font-medium text-white justify-start transition-transform duration-500 ease-in-out group-hover:translate-y-1">
+                {service.title}
+              </div>
+              <p className="pt-1 text-[15px] text-center">
+                {service.description}
+              </p>
+            </div>
+          ))}
         </div>
-        <div>
-          <h4 className="font-semibold mb-1">MAGNETIC PARTICLE INSPECTION</h4>
-          <img src={img2} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p2}</p>
-        </div>
-        <div>
-          <h4 className="font-semibold mb-1">LIQUID PENETRANT INSPECTION</h4>
-          <img src={img3} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p3}</p>
-        </div>
-        <div>
-          <h4 className="font-semibold mb-1">RADIOGRAPHIC TESTING</h4>
-          <img src={img4} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p4}</p>
-        </div>
-        <div>
-          <h4 className="font-semibold mb-1">ULTRASONIC TESTING</h4>
-          <img src={img5} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p5}</p>
-        </div>
-        <div>
-          <h4 className="font-semibold mb-1">LIFTING EQUIPMENT INSPECTION</h4>
-          <img src={img6} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p6}</p>
-        </div>
-        <div>
-          <h4 className="font-semibold mb-1">COATING/PAINTING INSPECTION</h4>
-          <img src={img7} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p7}</p>
-        </div>
-        <div>
-          <h4 className="font-semibold mb-1">DRILL PIPE INSPECTION SERVICES</h4>
-          <img src={img8} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p8}</p>
-        </div>
-        <div>
-          <h4 className="font-semibold mb-1">CALIBRATION/PRESSURE TESTING</h4>
-          <img src={img9} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p9}</p>
-        </div>
-        <div>
-          <h4 className="font-semibold mb-1">WELDING INSPECTION SERVICES</h4>
-          <img src={img10} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p10}</p>
-        </div>
-        <div>
-          <h4 className="font-semibold mb-1">
-            SOCKETING AND SPLICING INSPECTION
-          </h4>
-          <img src={img11} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p11}</p>
-        </div>
-        <div>
-          <h4 className="font-semibold mb-1">DESTRUCTIVE TESTING SERVICE</h4>
-          <img src={img12} alt="" />
-          <p className="pt-1 text-[18px] sm:text-[15px]">{p12}</p>
-        </div>
+        <button
+          onClick={handleClick}
+          className="mt-8 px-6 py-2 bg-transparent text-white rounded hover:bg-gray-700 border-white border transition-colors duration-500 ease-in-out"
+        >
+          Read More...
+        </button>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default ServicesProps;

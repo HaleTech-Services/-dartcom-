@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 import ServicesProps from "../components/ServicesProps";
-import img1 from "../assets/img13.png";
-import img2 from "../assets/img14.png";
-import img3 from "../assets/img15.png";
-import img4 from "../assets/img16.png";
+import img1 from "/assets/teem3.jpeg";
+import img2 from "/assets/Teamm.jpeg";
+import img3 from "/assets/teem1.jpeg";
+import img4 from "/assets/teem2.jpeg";
 import img5 from "/assets/Oil.jpeg";
 import img6 from "/assets/prog3.jpg";
 import img7 from "/assets/archi5.jpg";
@@ -44,7 +44,7 @@ function Services() {
           WE PROVIDE THE BEST CUSTOMER SERVICE
         </h1>
         <div className="pt-5">
-          <p data-aos="fade-right" data-aos-duration="1000" className="mb-4">
+          <p data-aos="fade-right" data-aos-duration="1000" className="mb-4 text-justify">
             Dartcom Projects Nigeria Ltd is a company that is known
             internationally for providing engineering solutions in the area of
             construction and fabrication. We offer engineering expertise that
@@ -52,7 +52,7 @@ function Services() {
             projects designs.
           </p>
 
-          <p data-aos="fade-right" data-aos-duration="1000">
+          <p data-aos="fade-right" data-aos-duration="1000" className="text-justify">
             We also offer innovative and cost effective solutions to our
             clients, including conceptual ideas in engineering and construction,
             design and fabrication as well as long term maintenance. We sustain
@@ -83,7 +83,7 @@ function Services() {
           >
             THINK MAINTENANCE, THINK DARTCOM
           </h1>
-          <h3 data-aos="fade-right" data-aos-duration="1000">
+          <h3 data-aos="fade-right" data-aos-duration="1000" className="text-justify">
             DARTCOM PROJECT NIGERIA LIMITED acknowledges that failures in
             lifting equipment can result in significant or even fatal injuries.
             As a result of this, we offer maintenace services to enusre safe and
@@ -109,7 +109,7 @@ function Services() {
         <h1 className="text-center text-xl sm:text-2xl font-semibold mb-4">
           FROM NOVICE TO PROFESSIONALISM
         </h1>
-        <p className="font-poppins">
+        <p className="font-poppins text-justify">
           DARTCOM PROJECTS NIGERIA LIMITED has a training facility, with
           experienced and well trained facilitators who are professionals in
           areas of lifting inspection, Crane operator, Rigger, Rope access etc.
@@ -123,22 +123,22 @@ function Services() {
         <div
           data-aos="zoom-in-up"
           data-aos-duration="1000"
-          className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
+          className="mt-6 mb-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
         >
-          <div>
-            <img className="w-full" src={img1} alt="" />
+          <div className="md:w-64 h-64 mb-4">
+            <img className="w-full md:w-64 h-64 object-cover" src={img1} alt="" />
             <p className="pt-2 text-sm font-semibold">Project Managers</p>
           </div>
-          <div>
-            <img className="w-full" src={img2} alt="" />
+          <div className="md:w-64 h-64 mb-4">
+            <img className="w-full md:w-64 h-64 object-cover" src={img2} alt="" />
             <p className="pt-2 text-sm font-semibold">Technical Team</p>
           </div>
-          <div>
-            <img className="w-full" src={img3} alt="" />
+          <div className="md:w-64 h-64 mb-4">
+            <img className="w-full md:w-64 h-64 object-cover" src={img3} alt="" />
             <p className="pt-2 text-sm font-semibold">Construction Team</p>
           </div>
-          <div>
-            <img className="w-full" src={img4} alt="" />
+          <div className="md:w-64 h-64 ">
+            <img className="w-full md:w-64 h-64 object-cover" src={img4} alt="" />
             <p className="pt-2 text-sm font-semibold">Architectural Team</p>
           </div>
         </div>

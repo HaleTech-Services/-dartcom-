@@ -73,7 +73,7 @@
   }
   
   .info-number {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #FF7B00;
     font-weight: bold;
     margin-bottom: 0.5rem; /* Margin for better spacing when in column layout */
@@ -81,6 +81,7 @@
   
   @media (min-width: 768px) {
     .info-number {
+      font-size: 2rem;
       margin-bottom: 0; /* Remove margin in row layout */
       margin-right: 0.5rem; /* Add margin between number and text in row layout */
     }

@@ -1,4 +1,3 @@
-import send from "../assets/send.png";
 import { useNavigate } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
@@ -14,12 +13,12 @@ export default function Footer() {
     <>
       <footer className=" text-white py-12 bg-[#2D3E4E]">
         <div className="container mx-auto px-4 py-4">
-          <div className="grid justify-around grid-cols-2 md:flex md:flex-row gap-16">
+          <div className="grid justify-around grid-cols-2 md:flex md:flex-row md:gap-16">
             <div className="w-full md:w-2/12">
               <img
                 src="/assets/Logo.jpeg"
                 alt="Dartcom"
-                style={{ width: "9rem", height: "3.5rem" }}
+                style={{ width: "9rem", height: "3.5rem", borderRadius: '10px'}}
               />
             </div>
             <div>
@@ -33,27 +32,27 @@ export default function Footer() {
                 Rivers State, Nigeria
               </small>
               <div className="flex space-x-4 mt-4">
-                <FaFacebookF />
-                <FaLinkedinIn />
+                <a href="http:facebook.com/100080262497920"><FaFacebookF /></a>
+                <a href="https://www.linkedin.com/company/dartcom-projects-nigeria-limited/"><FaLinkedinIn /></a>
                 <FaInstagram />
               </div>
             </div>
-            <div>
+            <div className="mb-4">
               <h4 className="font-bold mb-2">Quick Links</h4>
               <ul>
-                <li onClick={() => handleNavigation("/services")} className="cursor-pointer mb-5">
+                <li onClick={() => handleNavigation("/services")} className="cursor-pointer mb-2 md:mb-5">
                   Our Services
                 </li>
-                <li onClick={() => handleNavigation("/about")} className="cursor-pointer mb-5">About Us</li>
-                <li onClick={() => handleNavigation("/")} className="cursor-pointer mb-5">Our Projects</li>
-                <li onClick={() => handleNavigation("/")} className="cursor-pointer mb-5">Features</li>
+                <li onClick={() => handleNavigation("/about")} className="cursor-pointer mb-2 md:mb-5">About Us</li>
+                <li onClick={() => handleNavigation("/")} className="cursor-pointer mb-2 md:mb-5">Our Projects</li>
+                <li onClick={() => handleNavigation("/")} className="cursor-pointer mb-2 md:mb-5">Features</li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-2">Support</h4>
               <ul>
-                <li className="cursor-pointer mb-5">Who We Are</li>
-                <li className="cursor-pointer mb-5"></li>
+                <li className="cursor-pointer mb-4 md:mb-5">Who We Are</li>
+                {/* <li className="cursor-pointer mb-5"></li> */}
                 <li className="cursor-pointer">FAQ</li>
               </ul>
             </div>

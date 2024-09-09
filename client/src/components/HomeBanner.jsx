@@ -62,7 +62,7 @@ export default function HomeBanner() {
       </div>
       <div className="info-container w-[90%] md:w-[60%] bg-white absolute -bottom-[20%] md:-bottom-[10%] left-1/2 -translate-x-1/2 bottom-shadow flex items-center justify-between p-4 md:p-8 mb-3 translate-y-4 md:translate-y-0 gap-3">
         <div className="info-item flex flex-col md:flex-row items-center justify-center">
-          <span className="info-number text-[#FF7B00] text-xl md:text-2xl font-bold">
+          <span className="info-number text-[#FF7B00] text-[20px] md:text-2xl font-bold">
           {yearsInBusiness}+
           </span>
           <span className="info-text text-xs md:text-base">
@@ -70,7 +70,7 @@ export default function HomeBanner() {
           </span>
         </div>
         <div className="info-item flex flex-col md:flex-row items-center justify-center">
-          <span className="info-number text-[#FF7B00] text-xl md:text-2xl font-bold">
+          <span className="info-number text-[#FF7B00] text-xs md:text-2xl font-bold">
           {completedProjects}+
           </span>
           <span className="info-text text-xs md:text-base">
@@ -78,7 +78,7 @@ export default function HomeBanner() {
           </span>
         </div>
         <div className="info-item flex flex-col md:flex-row items-center justify-center">
-          <span className="info-number text-[#FF7B00] text-xl md:text-2xl font-bold">
+          <span className="info-number text-[#FF7B00] text-xs md:text-2xl font-bold">
           {customerSatisfaction}%
           </span>
           <span className="info-text text-xs md:text-base">
