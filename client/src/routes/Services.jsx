@@ -4,15 +4,19 @@ import ServicesProps from "../components/ServicesProps";
 import img1 from "/assets/teem3.jpeg";
 import img2 from "/assets/Teamm.jpeg";
 import img3 from "/assets/teem1.jpeg";
-import img4 from "/assets/teem2.jpeg";
+import img4 from "/assets/teem.jpeg";
 import img5 from "/assets/Oil.jpeg";
 import img6 from "/assets/prog3.jpg";
 import img7 from "/assets/archi5.jpg";
 import img8 from "/assets/Beam.jpg";
 import img9 from "/assets/Technical.jpeg";
-import img10 from "../assets/img22.png";
+import img10 from "../assets/img23.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+import ProjectsHero from "../components/ProjectsHero";
+import ProjectHero from '/assets/progectss.jpg';
+
 
 function Services() {
   const p = "OUR SERVICES";
@@ -26,7 +30,10 @@ function Services() {
 
   return (
     <main className="w-full h-auto mb-0">
-      <HeroSection text={p} />
+      {/* <HeroSection text={p} /> */}
+      <ProjectsHero text={"Our Projects"} style={{
+        backgroundImage: `linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${ProjectHero})`,
+      }} />
 
       <section className="w-full pt-[50px] px-[1rem] sm:px-[2rem] lg:px-[5rem]">
         <h4
@@ -44,7 +51,11 @@ function Services() {
           WE PROVIDE THE BEST CUSTOMER SERVICE
         </h1>
         <div className="pt-5">
-          <p data-aos="fade-right" data-aos-duration="1000" className="mb-4 text-justify">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="mb-4 text-justify"
+          >
             Dartcom Projects Nigeria Ltd is a company that is known
             internationally for providing engineering solutions in the area of
             construction and fabrication. We offer engineering expertise that
@@ -52,7 +63,11 @@ function Services() {
             projects designs.
           </p>
 
-          <p data-aos="fade-right" data-aos-duration="1000" className="text-justify">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="text-justify"
+          >
             We also offer innovative and cost effective solutions to our
             clients, including conceptual ideas in engineering and construction,
             design and fabrication as well as long term maintenance. We sustain
@@ -83,7 +98,11 @@ function Services() {
           >
             THINK MAINTENANCE, THINK DARTCOM
           </h1>
-          <h3 data-aos="fade-right" data-aos-duration="1000" className="text-justify">
+          <h3
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="text-justify"
+          >
             DARTCOM PROJECT NIGERIA LIMITED acknowledges that failures in
             lifting equipment can result in significant or even fatal injuries.
             As a result of this, we offer maintenace services to enusre safe and
@@ -114,9 +133,9 @@ function Services() {
           experienced and well trained facilitators who are professionals in
           areas of lifting inspection, Crane operator, Rigger, Rope access etc.
           Other training services include Crane inspection training, crane
-          operator training, crane maintenance training, Rigger training, Fore man
-          training, rope access training, NDTtraining, NEBOSH, Project management
-          training etc. Our trainers are certified in LEEA, NSL, Lyod
+          operator training, crane maintenance training, Rigger training, Fore
+          man training, rope access training, NDTtraining, NEBOSH, Project
+          management training etc. Our trainers are certified in LEEA, NSL, Lyod
           British, ASNT, and FACTACT. We also provide training services to our
           client in their facilities.
         </p>
@@ -126,19 +145,35 @@ function Services() {
           className="mt-6 mb-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
         >
           <div className="md:w-64 h-64 mb-4">
-            <img className="w-full md:w-64 h-64 object-cover" src={img1} alt="" />
+            <img
+              className="w-full md:w-64 h-64 object-cover"
+              src={img1}
+              alt=""
+            />
             <p className="pt-2 text-sm font-semibold">Project Managers</p>
           </div>
           <div className="md:w-64 h-64 mb-4">
-            <img className="w-full md:w-64 h-64 object-cover" src={img2} alt="" />
+            <img
+              className="w-full md:w-64 h-64 object-cover"
+              src={img2}
+              alt=""
+            />
             <p className="pt-2 text-sm font-semibold">Technical Team</p>
           </div>
           <div className="md:w-64 h-64 mb-4">
-            <img className="w-full md:w-64 h-64 object-cover" src={img3} alt="" />
+            <img
+              className="w-full md:w-64 h-64 object-cover"
+              src={img3}
+              alt=""
+            />
             <p className="pt-2 text-sm font-semibold">Construction Team</p>
           </div>
           <div className="md:w-64 h-64 ">
-            <img className="w-full md:w-64 h-64 object-cover" src={img4} alt="" />
+            <img
+              className="w-full md:w-64 h-64 object-cover"
+              src={img4}
+              alt=""
+            />
             <p className="pt-2 text-sm font-semibold">Architectural Team</p>
           </div>
         </div>
@@ -183,8 +218,21 @@ function Services() {
           <img className="w-full" src={img9} alt="" />
         </div>
       </div>
-      <div data-aos="zoom-in-up" data-aos-duration="1000" className="mt-10">
-        <img src={img10} alt="" />
+      <div
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+        className="mt-10 w-full h-80 bg-cover bg-center flex justify-center flex-col gap-4"
+        style={{
+          backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(${img10})`,
+          alignItems: "center",
+        }}
+      >
+        <p className="text-2xl text-center md:text-4xl text-white">
+          Looking For a Contractor for Your Next Project?
+        </p>
+        <Link to="/contact">
+          <button className="p-4 text-white bg-[#FF7B00]">Contact Us</button>
+        </Link>
       </div>
     </main>
   );
