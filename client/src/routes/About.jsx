@@ -40,13 +40,14 @@ const About = () => {
           </section>
 
           <section className="text-center">
-            <h2 className="text-orange-600 uppercase tracking-widest mb-2">
+            {/* <h2 className="text-orange-600 uppercase tracking-widest mb-2">
               Dartcom
-            </h2>
+            </h2> */}
             <h1 className="text-2xl font-bold">Our Mission</h1>
-            <p className="mt-4 text-gray-700 text-justify">
-              We Pledge to deliver Without breach of terms. We pledge to develop
-              Nigerians local content. We pledge to uphold National pride and
+            <p className="mt-4 text-gray-700 text-center">
+              We Pledge to deliver Without breach of terms. <br />
+              We pledge to develop Nigeria's local content. <br /> 
+              We pledge to uphold National pride and
               nations Building.
             </p>
           </section>
@@ -54,21 +55,21 @@ const About = () => {
           <p className="my-5"> </p>
 
           <section className="text-center">
-            <h2 className="text-orange-600 uppercase tracking-widest mb-2">
+            {/* <h2 className="text-orange-600 uppercase tracking-widest mb-2">
               Dartcom
-            </h2>
+            </h2> */}
             <h1 className="text-2xl font-bold">Our VISION</h1>
-            <p className="mt-4 text-gray-700 text-justify">
-              To be Nigerias’ foremost company in our discipline to contribute a
-              meaningful quota in achieving vision 2020 To drastically reduce
-              unemployment by investing in human capital development.
+            <p className="mt-4 text-gray-700 text-center">
+              To be Nigeria’s foremost company in our discipline. <br /> 
+              To contribute a meaningful quota in achieving vision 2050 <br /> 
+              To drastically reduce unemployment by investing in human capital development.
             </p>
           </section>
 
           <section className="text-center">
-            <h2 className="text-orange-600 uppercase tracking-widest mb-2">
+            {/* <h2 className="text-orange-600 uppercase tracking-widest mb-2">
               Dartcom
-            </h2>
+            </h2> */}
             <h1 className="text-2xl font-bold">Our Belief</h1>
             <p className="mt-4 text-gray-700 text-left">
               <span className="text-[#D2153D] font-bold">PROFILE:</span> To be

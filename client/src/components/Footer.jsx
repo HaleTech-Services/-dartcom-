@@ -61,7 +61,7 @@ export default function Footer() {
               <ul>
                 <li><small>Address</small></li>
                 <li><small>+234 803 083 6623</small></li>
-                <li className="cursor-pointer mb-5"><small>info@dartcomprojects.com</small></li>
+                <li className="cursor-pointer mb-5"><small>info@dartcomprojects.com.ng</small></li>
               </ul>
             </div>
           </div>
