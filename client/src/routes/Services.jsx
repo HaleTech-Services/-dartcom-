@@ -14,11 +14,10 @@ import img10 from "../assets/img23.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
-import ProjectsHero from "../components/ProjectsHero";
-import ProjectHero from '/assets/progectss.jpg';
+import ProjectHero from "/assets/services.jpg";
 
 
-function Services() {
+function Services({ children }) {
   const p = "OUR SERVICES";
   const param =
     "Dartcom carries out its construction and fabrication works to meet international standards and specifications and we ensure that our works exhibits a high structural integrity, durability and corrosive resistance";
@@ -31,9 +30,38 @@ function Services() {
   return (
     <main className="w-full h-auto mb-0">
       {/* <HeroSection text={p} /> */}
-      <ProjectsHero text={"Our Projects"} style={{
+      {/* <ProjectsHero
+        text={"Our Projects"}
+        style={{
+          backgroundImage: `linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${ProjectHero})`,
+        }}
+      /> */}
+
+<div
+      className={`bg-cover h-[250px] md:h-[100vh] ${
+        !children && "flex items-center justify-center md:justify-start"
+      }`}
+      style={{
         backgroundImage: `linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url(${ProjectHero})`,
-      }} />
+      }}
+    >
+        {children}
+      <div
+        className={`${!children && "translate-y-1/2 md:translate-x-[50%] translate-x-0 flex flex-col"}`}
+      >
+        {!children && (
+          <h2 className="text-white font-bold text-center md:text-right text-4xl md:text-5xl">
+            Our Services
+          </h2>
+        )}
+        {!children && (
+          <p className="text-center md:text-right text-white">
+            @ Dartcom Projects
+          </p>
+        )}
+
+      </div>
+    </div>
 
       <section className="w-full pt-[50px] px-[1rem] sm:px-[2rem] lg:px-[5rem]">
         <h4
@@ -54,7 +82,7 @@ function Services() {
           <p
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="mb-4 text-justify"
+            className="mb-4 text-justify text-[13px]"
           >
             Dartcom Projects Nigeria Ltd is a company that is known
             internationally for providing engineering solutions in the area of
@@ -66,9 +94,18 @@ function Services() {
           <p
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="text-justify"
+            className="text-justify text-[13px]"
           >
             We also offer innovative and cost effective solutions to our
+            clients, including conceptual ideas in engineering and construction,
+            design and fabrication as well as long term maintenance. We sustain
+            our reputation by delivering quick job performance and services in
+            accordance with international standards achieved by a continuous
+            trained and skilled workforce that carry out their job with a fleet
+            of modern construction and fabrication equipment. Other specialized
+            services that we offer in construction and fabrication are as
+            follow:
+            {/* We also offer innovative and cost effective solutions to our
             clients, including conceptual ideas in engineering and construction,
             design and fabrication as well as long term maintenance. We sustain
             our reputation by delivering quick job performance and services in
@@ -76,7 +113,7 @@ function Services() {
             trained and skilled workforce that carry out their job with a fleet
             of modern construction and fabrication equipment. Other specialized
             services that we offer in construction and fabrication are as
-            follow:
+            follow: */}
           </p>
         </div>
         <div data-aos="zoom-in-up" data-aos-duration="1000" className="mt-10">
@@ -129,7 +166,7 @@ function Services() {
           FROM NOVICE TO PROFESSIONALISM
         </h1>
         <p className="font-poppins text-justify">
-          DARTCOM PROJECTS NIGERIA LIMITED has a training facility, with
+          DARTCOM PROJECTS NIGERIA LIMITED has a training program, with
           experienced and well trained facilitators who are professionals in
           areas of lifting inspection, Crane operator, Rigger, Rope access etc.
           Other training services include Crane inspection training, crane

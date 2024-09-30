@@ -2,14 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
-import img3 from "../assets/img3.png";
-import img4 from "../assets/img4.png";
-import img5 from "../assets/img5.png";
-import img6 from "../assets/img6.png";
-import img7 from "../assets/img7.png";
 import img8 from "../assets/img8.png";
 import img9 from "../assets/img9.png";
-import img10 from "../assets/img10.png";
 import img11 from "../assets/img11.png";
 import img12 from "../assets/img12.png";
 
@@ -77,7 +71,8 @@ const services = [
   {
     title: "MAGNETIC PARTICLE INSPECTION",
     image: img2,
-    description: "Construction of ultramodern...",
+    description:
+      "DARTCOM PROJECTS NIGERIA LIMITED uses this process for detecting surface and slightly subsurface discontinuities in ferromagnetic materials such an iron, nickel, cobalt and some of their alloys.",
   },
   // {
   //   title: "LIQUID PENETRANT INSPECTION",
@@ -144,10 +139,10 @@ const ServicesProps = () => {
                 <div className="absolute bottom-0 left-0 h-1/2 min-h-5 w-1/2 border-b-4 border-[#76B5EA] border-l-4 transition-all duration-500 ease-in-out transform -translate-x-10 group-hover:translate-x-0"></div>
                 <div className="absolute top-0 right-0 h-1/2 min-h-5 w-1/2 border-t-4 border-[#76B5EA] border-r-4 transition-all duration-500 ease-in-out transform translate-x-10 group-hover:translate-x-0"></div>
               </div>
-              <div className="text-lg font-medium text-white justify-start transition-transform duration-500 ease-in-out group-hover:translate-y-1">
+              <div className="text-base font-medium text-white justify-start transition-transform duration-500 ease-in-out group-hover:translate-y-1">
                 {service.title}
               </div>
-              <p className="pt-1 text-[15px] text-center">
+              <p className="pt-1 text-[12px] text-center">
                 {service.description}
               </p>
             </div>

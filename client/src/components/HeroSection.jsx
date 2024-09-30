@@ -1,5 +1,5 @@
 
-import HeroImage from "/assets/hero.jpeg";
+import HeroImage from "/assets/Contact.jpg";
 
 export default function HeroSection({ text, children }) {
   return (
